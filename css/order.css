@@ -1,0 +1,121 @@
+main h2{
+    padding: 50px 40px;
+    font-size: 80px;
+    font-weight: 400;
+    font-family: "Manrope", sans-serif;
+}
+.table-container {
+    min-width: 1000px;
+    padding: 0 40px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: "Manrope", sans-serif;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr th{
+   
+}
+th {
+    background-color: #F9F9F9; /* slate-200 */
+    height: 60px;
+    min-width: 150px;
+   max-width: 400px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    /* border: 2px solid #ddd; */
+    font-family: "Manrope", sans-serif;
+}
+
+td {
+    padding: 10px;
+    /* padding-left: 20px; */
+    padding: 35px 20px;
+    vertical-align: text-top;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0A2926;
+    border-bottom: 1px solid #ddd;
+    font-family: "Manrope", sans-serif;
+}
+td p{
+    margin: 0;
+    margin-bottom: 15px;
+}
+td:last-child{
+    /* color: red; */
+}
+td a {
+    text-decoration: none;
+    color: #E65909;
+}
+tr.horizontal-line {
+    border-bottom: 2px solid #ddd;
+    font-family: "Manrope", sans-serif;
+}
+
+.pagination {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.right-side-table-navigation{
+    display: flex;
+    gap: 10px;
+}
+.pagination #prev-btn,#next-btn {
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    font-family: "Manrope", sans-serif;
+    gap: 5px;
+    align-items: center;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    /* border: 1px solid; */
+    border: none;
+    border-radius: 5px;
+}
+.pagination button span{
+    height: 16px;
+    font-size: medium;
+    width: 16px;
+}
+.pagination button:hover {
+    /* background-color: #2b6cb0; */
+}
+
+#page-numbers {
+    display: flex;
+    align-items: center;
+}
+
+#page-numbers span {
+    margin: 0 8px;
+    cursor: pointer;
+}
+#page-numbers span.active {
+    background-color: #e7e7e7;
+    /* padding: 10px; */
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    color: black;
+  }
+#page-numbers span:hover {
+    /* background-color: #e7e7e7; */
+}

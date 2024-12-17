@@ -1,0 +1,123 @@
+.login-section{
+    gap: 50px;
+    margin-bottom: 50px;
+    padding: 0 40px;
+    font-family: "manrope", sans-serif;
+    display: flex;
+    /* justify-content: center; */
+
+}
+.login-section .login-sideimg{
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    height: 900px;
+    border: #d5d5d5 1px solid;
+}
+
+.login-section .login-form{
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.login-section .login-form p{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.login-section .login-form h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.login-section div img{
+    /* object-fit: cover; */
+    margin-left: -90px;
+    /* margin-bottom: 200px; */
+    margin-top: -200px;
+    height: 130%;
+    width: 130%;
+}
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.login-form form div label{
+    font-size: 16px;
+    font-weight: 500;
+    color: #546967;
+}
+.login-form form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.login-form form div input{
+    height: 66px;
+    border-radius: 12px;
+    background-color: #ECF2F2;
+    outline: none;
+    width: 420px;
+    min-width: 300px;
+    padding: 0 20px;
+    border: none;
+}
+.login-form form hr{
+    width: 150px;
+    margin-left: 22%;
+}
+.login-form form .login-continue-btn{
+    cursor: pointer;
+    background-color: #0A2926;
+    border-radius: 12px;
+    height: 66px;
+    width: 460px;
+    min-width: 300px;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "manrope", sans-serif;
+    border: none;
+    text-transform: capitalize;
+
+}
+.login-form form  .login-google-btn{
+    background-color: white;
+  cursor: pointer;
+    border: #e1e1e1 1px solid;
+    border-radius: 12px;
+    height: 66px;
+    width: 380px;
+    padding-left: 80px;
+    min-width: 300px;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-family: "manrope", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+gap: 10px;
+}
+.login-form form  .login-google-btn span{
+    font-size: 22px;
+    font-family: "manrope", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.login-form form  .login-google-btn img{
+    /* align-self: center; */
+    margin-top: 3px;
+    /* display: none; */
+    
+    height: 30px;
+    width: 30px;
+}
