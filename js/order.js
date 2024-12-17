@@ -8,7 +8,6 @@ const data = [
       `24/11/15 07:36AM Account charged $707.50`,
       `24/11/15 07:55AM Order submitted`,
     ],
-    // task: "Task 1",
   },
   {
     order: 2,
@@ -504,12 +503,10 @@ const data = [
     status: "Pending",
     activity: "Activity 16",
   },
-
-  // Add more data if needed
 ];
 
 let currentPage = 1;
-const rowsPerPage = 8;
+const rowsPerPage = 12;
 
 function renderTable() {
   const tableBody = document.getElementById("table-body");
@@ -545,7 +542,6 @@ function renderTable() {
 
   renderPagination();
 
-  // Scroll to top
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
@@ -570,32 +566,39 @@ function renderPagination() {
     pageNumber.onclick = () => {
       currentPage = page;
       renderTable();
-      scrollToTop();
     };
     return pageNumber;
   };
 
-  // Logic to dynamically show pagination numbers
   if (totalPages <= 5) {
-    // Show all numbers if pages <= 5
+    // Show all numbers if total pages <= 5
     for (let i = 1; i <= totalPages; i++) {
       pageNumbers.appendChild(createPageNumber(i));
     }
   } else {
-    // For more than 5 pages
-    if (currentPage > 2) {
-      pageNumbers.appendChild(createPageNumber(1));
-      if (currentPage > 3) {
-        const dots = document.createElement("span");
-        dots.textContent = "...";
-        dots.style.margin = "0 5px";
-        pageNumbers.appendChild(dots);
-      }
+    // Always show the first page
+    pageNumbers.appendChild(createPageNumber(1));
+
+    if (currentPage > 3) {
+      const dots = document.createElement("span");
+      dots.textContent = "...";
+      dots.style.margin = "0 5px";
+      pageNumbers.appendChild(dots);
     }
 
-    // Show the middle 3 pages
-    let startPage = Math.max(2, currentPage - 1);
-    let endPage = Math.min(totalPages - 1, currentPage + 1);
+    // Show middle pages dynamically
+    let startPage, endPage;
+
+    if (currentPage === 1) {
+      startPage = 2;
+      endPage = 3;
+    } else if (currentPage === totalPages) {
+      startPage = totalPages - 2;
+      endPage = totalPages - 1;
+    } else {
+      startPage = Math.max(2, currentPage - 1);
+      endPage = Math.min(totalPages - 1, currentPage + 1);
+    }
 
     for (let i = startPage; i <= endPage; i++) {
       pageNumbers.appendChild(createPageNumber(i));
@@ -608,6 +611,7 @@ function renderPagination() {
       pageNumbers.appendChild(dots);
     }
 
+    // Always show the last page
     pageNumbers.appendChild(createPageNumber(totalPages));
   }
 
@@ -629,18 +633,6 @@ function changePage(direction) {
   }
   renderTable();
   scrollToTop();
-}
-
-renderTable();
-
-function changePage(direction) {
-  const totalPages = Math.ceil(data.length / rowsPerPage);
-  if (direction === -1 && currentPage > 1) {
-    currentPage--;
-  } else if (direction === 1 && currentPage < totalPages) {
-    currentPage++;
-  }
-  renderTable();
 }
 
 renderTable();
