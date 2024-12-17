@@ -107,7 +107,7 @@ tr.horizontal-line {
     cursor: pointer;
 }
 #page-numbers span.active {
-    background-color: #e7e7e7;
+    background-color: #CED4D4;
     /* padding: 10px; */
     display: grid;
     place-items: center;

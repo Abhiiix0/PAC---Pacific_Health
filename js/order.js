@@ -555,11 +555,11 @@ function renderPagination() {
     pageNumber.textContent = page;
     pageNumber.style.cursor = "pointer";
     pageNumber.style.margin = "0 5px";
-    pageNumber.style.padding = "5px 10px";
+    pageNumber.style.padding = "8px 15px";
     pageNumber.style.borderRadius = "5px";
 
     if (page === currentPage) {
-      pageNumber.style.backgroundColor = "#007BFF";
+      pageNumber.style.backgroundColor = "#CED4D4";
       pageNumber.style.color = "#fff";
     }
 
