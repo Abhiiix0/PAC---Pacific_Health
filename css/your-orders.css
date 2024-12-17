@@ -1,31 +1,8 @@
 main h2{
-    padding: 0 50px 40px;
+    padding: 50px 40px;
     font-size: 80px;
     font-weight: 400;
-    margin-left: -15px !important;
-    margin: 0;
     font-family: "Manrope", sans-serif;
-}
-main a {
-    padding: 50px 0px 0px 40px;
-    text-decoration: none;
-    cursor: pointer;
-    /* padding: 0 40px; */
-    text-align: start;
-    font-family: "Manrope", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    color: #E65909;
-}
-main a .material-symbols-outlined {
-    height: 12px;
-    font-size: 15px;
-    width: 12px;
-    /* margin-top: -3px; */
-    margin-right: 5px;
 }
 .table-container {
     min-width: 1000px;
@@ -37,45 +14,7 @@ main a .material-symbols-outlined {
     font-family: "Manrope", sans-serif;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
-.order-details{
-    padding: 0 40px;
-    margin-bottom: 70px !important;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-.order-details .order-details-date {
-    max-width: 400px;
-    display: flex;
-    gap: 50px;
-}
-.order-details .order-details-address {
-    max-width: 500px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 55px;
-}
-.order-details .order-details-address div{
-    display: flex;
-    gap: 0px;
-}
-.order-details div div{
-    display: flex;
-    flex-direction: column;
-}
-.order-details div div p:first-child, .order-details div p:first-child{
-    font-size: 18px;
-    font-weight: 700;
-    font-family: "Manrope", sans-serif;
-}
-.order-details div div p:last-child, .order-details div p:last-child{
-    font-family: "Manrope", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: #0A2926;
-    line-height: 35px;
-}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -87,7 +26,7 @@ thead tr th{
 th {
     background-color: #F9F9F9; /* slate-200 */
     height: 60px;
-    min-width: 120px;
+    min-width: 150px;
    max-width: 400px;
     padding-left: 20px;
     font-size: 18px;
@@ -96,9 +35,7 @@ th {
     /* border: 2px solid #ddd; */
     font-family: "Manrope", sans-serif;
 }
-.order-table-prod{
-    width: 550px;
-}
+
 td {
     padding: 10px;
     /* padding-left: 20px; */
