@@ -502,7 +502,7 @@ function renderTable() {
           }</p>
         </td>
         <td>
-          <a href="/10">View Order</a>
+          <a href="/order.html">View Order</a>
         </td>
         `;
     tableBody.appendChild(row);
