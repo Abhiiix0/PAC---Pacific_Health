@@ -57,19 +57,21 @@ function renderTable() {
 
   // Add GST and Total rows after the main data rows
   const gstRow = document.createElement("tr");
+  gstRow.classList.add("order-status-gstrow");
 
   gstRow.innerHTML = `
-      <td>GST</td>
+      <td colspan="5">GST</td>
       <td>$100</td>
     `;
   tableBody.appendChild(gstRow);
 
-  const totalRow = document.createElement("tr");
-  totalRow.innerHTML = `
-      <td>Total</td>
+  const totalprice = document.createElement("tr");
+  totalprice.classList.add("order-status-totalprice");
+  totalprice.innerHTML = `
+      <td colspan="5">Total</td>
       <td>$300</td>
     `;
-  tableBody.appendChild(totalRow);
+  tableBody.appendChild(totalprice);
 }
 
 renderTable();

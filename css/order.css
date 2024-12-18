@@ -28,6 +28,7 @@ main a .material-symbols-outlined {
     margin-right: 5px;
 }
 .table-container {
+    padding-bottom: 80px !important;
     min-width: 1000px;
     padding: 0 40px;
     margin: auto;
@@ -42,9 +43,10 @@ main a .material-symbols-outlined {
     margin-bottom: 70px !important;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 25px;
 }
 .order-details .order-details-date {
+    margin-top: 20px;
     max-width: 400px;
     display: flex;
     gap: 50px;
@@ -136,49 +138,16 @@ tr.horizontal-line {
     display: flex;
     gap: 10px;
 }
-.pagination #prev-btn,#next-btn {
-    padding: 5px 15px;
+.order-status-gstrow, .order-status-totalprice{
+    background-color: #F9F9F9;
+}
+.order-status-gstrow td, .order-status-totalprice td{
     font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
+    font-weight: 700;
     font-family: "Manrope", sans-serif;
-    gap: 5px;
-    align-items: center;
-    background-color: white;
-    color: rgb(0, 0, 0);
-    /* border: 1px solid; */
-    border: none;
-    border-radius: 5px;
-}
-.pagination button span{
-    height: 16px;
-    font-size: medium;
-    width: 16px;
-}
-.pagination button:hover {
-    /* background-color: #2b6cb0; */
 }
 
-#page-numbers {
-    display: flex;
-    align-items: center;
+.order-status-totalprice td{
+    border: none !important;
 }
-
-#page-numbers span {
-    margin: 0 8px;
-    cursor: pointer;
-}
-#page-numbers span.active {
-    background-color: #CED4D4;
-    /* padding: 10px; */
-    display: grid;
-    place-items: center;
-    border-radius: 8px;
-    height: 40px;
-    width: 40px;
-    color: black;
-  }
-#page-numbers span:hover {
-    /* background-color: #e7e7e7; */
-}
+/* .table-container */
