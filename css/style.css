@@ -35,7 +35,7 @@
 }
 .navbar {
 /* border:1px solid; */
-    height: 160px;
+    height: 158px;
     background-color: white;
     padding: 0 74px ;
     margin: 0 !important;
@@ -225,6 +225,7 @@ footer .footer-main .cc p{
 .hero-section{
     background-color: white;
     height: 700px;
+    /* border: 1px solid; */
     display: flex;
     gap: 100px;
 }
@@ -280,8 +281,10 @@ footer .footer-main .cc p{
     cursor: pointer;
 }
 .hero-section .hero-content {
+    /* border: 1px solid; */
     display: flex;
-    gap: 40px;
+    margin-top: -50px !important;
+    /* gap: 35px; */
     flex-direction: column;
     align-items: start;
     padding-left: 74px;
@@ -289,9 +292,11 @@ footer .footer-main .cc p{
 .hero-section .hero-content div:nth-child(2){
  
    max-width: 600px;
-   margin-bottom: 40px;
+   /* margin-bottom: 40px; */
 }
+
 .hero-section .hero-content .hero-btns{
+ margin-top: -5px;
     display: flex;
 justify-content: start !important;
 flex-direction: row;
@@ -323,7 +328,9 @@ flex-direction: row;
     font-family: "Manrope", sans-serif;
 }
 
-
+.hero-content-img-container{
+    /* height: 600px; */
+}
 /* ****************practitioner brand section********** */
  /* slider 1 */
  .my-swiper{
