@@ -99,14 +99,14 @@ footer{
 
 }
 footer .footer-newsletter{
-    height: 158px;
+    height: 160px;
     background-color: #EBEFEF;
     display: flex;
     gap: 20px;
     /* gap: 40px; */
     justify-content: center;
     align-items: center;
-    padding: 0 74px ;
+    padding: 0 74px 15px 74px ;
 
 }
 footer .footer-newsletter p{
@@ -145,7 +145,7 @@ footer .footer-newsletter .newsletter-input-container span{
     color: #0A2926;
 }
 footer .footer-main{
-    height: 468px;
+    height: 508px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -214,6 +214,7 @@ footer .footer-main .cc img{
     width: 300px;
 }
 footer .footer-main .cc p{
+    line-height: 13px;
     color: #0A2926;
     font-family: "Manrope", sans-serif;
     font-size: 10px;
