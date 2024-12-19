@@ -37,7 +37,7 @@
 /* border:1px solid; */
     height: 158px;
     background-color: white;
-    padding: 0 74px ;
+    padding: 0 68px ;
     margin: 0 !important;
     display: flex;
     justify-content: space-between;
@@ -106,7 +106,7 @@ footer .footer-newsletter{
     /* gap: 40px; */
     justify-content: center;
     align-items: center;
-    padding: 0 74px 15px 74px ;
+    padding: 0 68px 15px 68px ;
 
 }
 footer .footer-newsletter p{
@@ -153,7 +153,7 @@ footer .footer-main{
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     background-color: #CED7D6;
-    padding: 95px 74px 76px 74px;
+    padding: 95px 68px 76px 68px;
 
 }
 footer .footer-main .footer-main-content{
@@ -283,11 +283,11 @@ footer .footer-main .cc p{
 .hero-section .hero-content {
     /* border: 1px solid; */
     display: flex;
-    margin-top: -60px !important;
-    /* gap: 35px; */
+    margin-top: -120px !important;
+    gap: 35px !important;
     flex-direction: column;
     align-items: start;
-    padding-left: 74px;
+    padding-left: 68px;
 }
 .hero-section .hero-content div:nth-child(2){
  
@@ -297,7 +297,7 @@ footer .footer-main .cc p{
 
 .hero-section .hero-content .hero-btns{
  /* margin-top: -5px; */
- padding-top: 20px;
+ padding-top: 35px;
     display: flex;
 justify-content: start !important;
 flex-direction: row;
@@ -335,7 +335,7 @@ flex-direction: row;
 /* ****************practitioner brand section********** */
  /* slider 1 */
  .my-swiper{
-    padding: 138px 74px 68px 74px;
+    padding: 138px 68px 68px 68px;
      /* border: 1px solid; */
  }
  .my-swiper h3{
@@ -430,7 +430,7 @@ flex-direction: row;
 /* *********home features********** */
 .home-features {
 /* border: 1px solid black; */
-padding: 0px 74px;
+padding: 0px 68px;
 display: flex;
 gap: 22px;
 flex-direction: column;
