@@ -2,7 +2,7 @@
     color: rgb(63, 94, 79);
 }
 main{
-    padding: 0 40px;
+    padding: 0 74px;
 }
 .contact-container{
     padding: 90px 0 150px 0;
@@ -16,7 +16,8 @@ main{
     /* background-color: aqua; */
 }
 .contact-container h3{
-    font-size: 80px;
+    font-size: 85px;
+    font-family: Coconat;
     font-weight: 400;
     /* padding: 24px 0; */
     padding-bottom: 30px;
@@ -27,7 +28,7 @@ main{
 
 }
 .contact-info-container{
-    width: 40%;
+    width: 34%;
     /* border: 1px solid ; */
     display: flex;
     /* justify-content: center; */
@@ -44,11 +45,14 @@ main{
     /* align-items: center; */
 }
 .contact-address{
+    padding-top: 70px;
     width: 350px;
 }
 .contact-info-container div p{
     font-size: 18px;
     font-weight: 500;
+    line-height: 30px;
+    text-decoration: none;
     font-family: "Manrope", sans-serif;
 }
 .contact-info-container div h4{
@@ -61,11 +65,12 @@ main{
     font-weight: 500;
     text-align: left;
     font-family: "Manrope", sans-serif;
+    text-decoration: none !important;
 }
 .contact-map-container{
     /* border: 1px solid ; */
     height: 700px;
-    width: 60%;
+    width: 66%;
     overflow: hidden;
     border-radius: 24px;
 }
