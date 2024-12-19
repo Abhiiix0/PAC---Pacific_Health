@@ -308,14 +308,14 @@ flex-direction: row;
     background-color: #0A2926;
     height: 67px;
 }
-    .hero-section div div .login:hover{
+.hero-section div div .login:hover{
         background-color: #CED7D6;
         color: #0A2926;
         font-size: 22px;
         font-weight: 600;
         font-family: "Manrope", sans-serif;
     }
-    .hero-section div div .register{
+.hero-section div div .register{
         background-color: #CED7D6;
         color: #0A2926;
         font-size: 22px;
@@ -339,7 +339,7 @@ flex-direction: row;
 .hero-animation-container {
     position: relative;
     
-    width: 100%;
+    width: 700px;
     /* overflow: hidden; */
     /* width: 900px; */
     /* border: 1px solid; */
@@ -352,7 +352,7 @@ flex-direction: row;
     cursor: pointer;
     position: absolute;
     top: 14%;
-    left: 39%;
+    left: 38.5%;
     background-color: #142e36;
     height: 40px;
     width: 40px;
@@ -370,8 +370,8 @@ flex-direction: row;
   .hero-animation-container .yellow {
     cursor: pointer;
     position: absolute;
-    bottom: 26.1%;
-    right: 29%;
+    bottom: 26.5%;
+    right: 28.5%;
     background-color: #d67514;
     height: 40px;
     width: 40px;
@@ -390,7 +390,7 @@ flex-direction: row;
     cursor: pointer;
     position: absolute;
     top: 33.5%;
-    right: 26%;
+    right: 25%;
     background-color: #7a4f96;
     height: 40px;
     width: 40px;
