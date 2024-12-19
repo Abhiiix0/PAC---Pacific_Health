@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Coconat;
+    src: url(/js/Coconat-Regular.woff);
+  }
 *{
     padding: 0;
     margin: 0;
@@ -7,12 +11,12 @@
 .notification-banner{
     background-color: #FADECE;
     border-radius: 12px;
-    padding: 0 12px;
-    height: 60px;
+    padding: 0px;
+    height: 67px;
     position: relative;
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 15px 20px 0 20px;
 }
 .notification-banner p {
     font-size: 16px;
@@ -20,23 +24,24 @@
     text-align: center;
     margin: auto;
     font-family: "Manrope", sans-serif;
-    /* border: black 2px solid; */
 }
 .notification-banner span{
    position: absolute;
-   top: 30%;
-   right: 16px;
-   font-size: 20px;
+   top: 32%;
+   right: 22px;
+   font-size: 24px;
+   color: #0A2926;
    cursor: pointer;
 }
 .navbar {
-    height: 110px;
+    border: 1px solid;
+    height: 158px;
     background-color: white;
-    padding: 0 40px ;
+    padding: 0 68px ;
+    margin: 0 !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
-        /* border: black 2px solid; */
 }
 .nav-logo{
     height: 32px;
@@ -44,36 +49,36 @@
 }
 .navbar .navbar-link-btn{
     display: flex;
-    gap: 45px;
+    gap: 70px;
     /* border: 2px solid black; */
     align-items: center;
 }
 .navbar ul{
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: 55px;
 }
 .navbar ul li a {
      text-decoration: none;
-     color: black;
+     color: #0A2926;
      font-family: "Manrope", sans-serif;
      font-size: 18px;
      font-weight: 600;
      display: flex;
      justify-content: center;
      align-items: center;
-     gap: 5px;
+     gap: 4px;
 
 }
 .navbar ul li a span {
-    font-size: 20px;
-    margin-top: 3px;
+    font-size: 18px;
+    margin-top: 4px;
 }
 .navbar .navbar-icon-btns{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 35px;
+    gap: 45px;
 }
 .navbar .navbar-icon-btns span{
     cursor: pointer;
@@ -89,21 +94,25 @@ footer{
 
 }
 footer .footer-newsletter{
-    height: 110px;
+    height: 158px;
     background-color: #EBEFEF;
     display: flex;
+    gap: 20px;
     /* gap: 40px; */
     justify-content: center;
     align-items: center;
-    padding: 0 40px ;
+    padding: 0 68px ;
 
 }
 footer .footer-newsletter p{
-    font-size: 50px;
+    font-size: 48px;
+    font-family: Coconat;
+    font-weight: 400;
     width: 100%;
+    /* border: 1px solid; */
 }
 footer .footer-newsletter .newsletter-input-container{
-   border-bottom: 1px solid black;
+   border-bottom: 1px solid #0A2926;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -112,29 +121,34 @@ footer .footer-newsletter .newsletter-input-container{
 footer .footer-newsletter .newsletter-input-container input{
     border: none;
     background-color: transparent;
-    height: 45px;
+    height: 60px;
     font-size: 18px;
     outline: none;
     font-family: "Manrope", sans-serif;
     width: 100%;
 }
 footer .footer-newsletter .newsletter-input-container input::placeholder{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
+    color: #0A2926;
+    opacity: 30%;
     font-family: "Manrope", sans-serif;
 }
 footer .footer-newsletter .newsletter-input-container span{
     font-size: 40px;
+    margin-right: -5px;
+    color: #0A2926;
 }
 footer .footer-main{
-    /* height: 700px; */
+    height: 468px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 55px;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     background-color: #CED7D6;
-    padding: 60px 40px;
+    padding: 95px 68px 76px 68px;
 
 }
 footer .footer-main .footer-main-content{
@@ -145,9 +159,12 @@ footer .footer-main .footer-main-content{
 footer .footer-main .footer-main-content div{
     width: 100%;
 }
+footer .footer-main .footer-main-content div svg{
+    padding-top: 15px;
+}
 footer .footer-main .footer-main-content ul li{
     list-style: none;
-    padding-bottom: 2px;
+    padding-bottom: 0px;
 }
 footer .footer-main .footer-main-content .footer-logo{
     width: 210px;
@@ -156,6 +173,7 @@ footer .footer-main .footer-main-content .footer-logo{
 footer .footer-main .footer-main-content .footer-links h3{
     text-transform: uppercase;
     font-weight: 500;
+    color: #0A2926;
     font-family: "Manrope", sans-serif;
     padding-bottom: 25px;
     font-size: 12px;
@@ -169,7 +187,7 @@ footer .footer-main .footer-main-content .footer-links{
 footer .footer-main .footer-main-content .footer-links .touch-help{
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
     /* border: 1px solid black; */
 }
 footer .footer-main .footer-main-content .footer-links ul li a {
@@ -183,7 +201,7 @@ footer .footer-main .footer-main-content .footer-links ul li a {
 
 footer .footer-main .cc {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     flex-direction: column;
 }
 footer .footer-main .cc img{
@@ -191,6 +209,7 @@ footer .footer-main .cc img{
     width: 300px;
 }
 footer .footer-main .cc p{
+    color: #0A2926;
     font-family: "Manrope", sans-serif;
     font-size: 10px;
     font-weight: 400;
