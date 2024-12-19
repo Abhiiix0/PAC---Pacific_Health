@@ -5,7 +5,7 @@ main{
     padding: 0 74px;
 }
 .contact-container{
-    padding: 90px 0 150px 0;
+    padding: 70px 0 150px 0;
     /* background-color: #9e9e9e; */
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@ main{
     font-family: Coconat;
     font-weight: 400;
     /* padding: 24px 0; */
-    padding-bottom: 30px;
+    /* padding-bottom: -50px; */
     /* background-color: #9e9e9e; */
 }
 .contact-container div{
