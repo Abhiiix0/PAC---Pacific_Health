@@ -296,7 +296,8 @@ footer .footer-main .cc p{
 }
 
 .hero-section .hero-content .hero-btns{
- margin-top: -5px;
+ /* margin-top: -5px; */
+ padding-top: 20px;
     display: flex;
 justify-content: start !important;
 flex-direction: row;
