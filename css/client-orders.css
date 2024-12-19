@@ -4,7 +4,39 @@ main h2{
     font-weight: 400;
     font-family: "Manrope", sans-serif;
 }
+.order-status-search{
+    /* margin-bottom: 50px; */
+    margin: 0 40px;
+    border-bottom: #CED4D4 1px solid;
+    /* border: 1px solid; */
+    height: 60px;
+    width: 450px;
+    display: flex;
+    gap: 10px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.order-status-search input{
+    font-size: large;
+    outline: none;
+    height: 100%;
+    /* padding: 0 10px; */
+    border: none;
+    width: 100%;
+}
+.order-status-search input::placeholder{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+    color: #CED4D4;
+}
+.order-status-search img{
+    width: 22px;
+    height:22px;
+}
+
 .table-container {
+    padding-top: 80px !important;
     min-width: 1000px;
     padding: 0 40px;
     margin: auto;
@@ -38,6 +70,7 @@ th {
 
 td {
     padding: 10px;
+    /* padding-left: 20px; */
     padding: 35px 20px;
     vertical-align: text-top;
     font-size: 18px;

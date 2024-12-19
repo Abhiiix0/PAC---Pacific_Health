@@ -14,12 +14,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/contact.css" />
-    <title>Contact us - Pecific Health</title>
+    <link rel="stylesheet" href="/css/emaillogs.css" />
+    <title>EmailLogs - Pecific Health</title>
   </head>
   <body>
     <header>
-      <section id="notification-banner" class="notification-banner">
+      <!-- <section id="notification-banner" class="notification-banner">
         <p>
           Christmas & New Year: We are closed from 12pm Tuesday 24th of December
           2024 to 9am Monday 6th of January 2025.
@@ -27,7 +27,7 @@
         <span id="notification-banner-close-btn" class="material-symbols-outlined notification-banner-closeIcon">
           close
         </span>
-      </section>
+      </section> -->
       <nav class="navbar">
         <div class="logo">
           <a href="/">
@@ -50,7 +50,7 @@
             keyboard_arrow_down
             </span></a></li>
           <li><a href="/pages/about.html">About us</a></li>
-          <li><a id="contact" href="/pages/contact.html">Contact</a></li>
+          <li><a  href="/pages/contact.html">Contact</a></li>
         </ul>
         <div class="navbar-icon-btns">
           <span class="material-symbols-outlined"> person </span>
@@ -60,6 +60,42 @@
     </div>
     </header>
     
+    <main>
+        <h2>Email log</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time stamp</th>
+                        <th class="emaillog-table-Description">Description</th>
+                        <th>Link</th>
+                        <th>Email</th>
+                        <th>Notes</th>
+                        <th>Resend</th>
+                    </tr>
+                    <tr class="horizontal-line"></tr>
+                </thead>
+                <tbody id="table-body">
+                  
+                </tbody>
+            </table>
+    
+            <div class="pagination">
+                <button id="prev-btn" onclick="changePage(-1)"><span class="material-symbols-outlined">
+                    arrow_back
+                    </span> Previous </button>
+
+                    <div class=" right-side-table-navigation">
+
+                        <div id="page-numbers"></div>
+                        <button id="next-btn" onclick="changePage(1)">Next <span class="material-symbols-outlined">
+                            arrow_forward
+                        </span></button>
+                    </div>
+            </div>
+        </div>
+    </main>
+
     <footer>
        <section class=" footer-newsletter">
         <p>Subscribe to our Newsletter</p>
@@ -145,6 +181,7 @@
 </div>
         </div>
     </footer>
+    <script src="/js/emaillogs.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>

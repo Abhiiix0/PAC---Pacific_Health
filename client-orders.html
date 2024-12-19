@@ -14,8 +14,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/order.css" />
-    <title>order status - Pecific Health</title>
+    <link rel="stylesheet" href="/css/client-orders.css" />
+    <title>Your orders - Pecific Health</title>
   </head>
   <body>
     <header>
@@ -61,48 +61,25 @@
     </header>
     
     <main>
-        <a href="/your-orders.html"><span class="material-symbols-outlined">
-            arrow_back
-            </span> Back to orders</a>
-        <h2>Order PHW3</h2>
+        <h2>Your client orders</h2>
+        <div class="order-status-search">
+          <input name="srch" id="order-status-search-input" type="text" placeholder="Search for order number, date, client...">
+          <img src="/images/OrderStatus/Search.png" alt="">
 
-        <div class="order-details">
-            <div class="order-details-date">
-                <p>
-
-                    Date 
-                </p>
-                <p>
-
-                    11/04/14 00:00
-                </p>
-            </div>
-            <div class="order-details-address">
-                <div>
-                    <p>Delievry Address</p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At, illum.
-
-                    </p>
-                </div>
-                <div>
-                    <p>Delievry Address</p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At, illum.
-
-                    </p>
-                </div>
-            </div>
         </div>
-
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th>Code</th>
-                        <th>Product</th>
-                        <th>Qty</th>
-                        <th>RRp incl GST</th>
-                        <th>W/S excl GST</th>
-                        <th>Price</th>
+                      <th>Client</th>
+                      <th>Order</th>
+                        <th>Date created</th>
+                        <th>Retail nc GST</th>
+                        <th>Wholesale exc GST</th>
+                        <th>Margin exc GST</th>
+                        <th>Status</th>
+                        <th>Activity</th>
+                        <th>Tasks</th>
                     </tr>
                     <tr class="horizontal-line"></tr>
                 </thead>
@@ -111,7 +88,7 @@
                 </tbody>
             </table>
     
-            <!-- <div class="pagination">
+            <div class="pagination">
                 <button id="prev-btn" onclick="changePage(-1)"><span class="material-symbols-outlined">
                     arrow_back
                     </span> Previous </button>
@@ -123,7 +100,7 @@
                             arrow_forward
                         </span></button>
                     </div>
-            </div> -->
+            </div>
         </div>
     </main>
 
@@ -212,7 +189,7 @@
 </div>
         </div>
     </footer>
-    <script src="/js/order.js"></script>
-    <script src="script.js"></script>
+    <script src="/js/client-orders.js"></script>
+    <!-- <script src="/"></script> -->
   </body>
 </html>

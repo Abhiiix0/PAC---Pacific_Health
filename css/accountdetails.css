@@ -1,0 +1,245 @@
+body{
+
+    /* position: relative; */
+}
+main{
+    padding: 0 40px;
+}
+.account-details-heading{
+    padding: 70px 0;
+    /* border:1px solid; */
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.account-details-heading h2{
+    margin: 0 !important;
+    padding: 0;
+    font-size: 80px;
+    font-weight: 400;
+    font-family: "Manrope", sans-serif;
+}
+.account-details-heading p{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+    color:"#849393"
+}
+.account-details-signin{
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid;
+}
+.account-details-signin h2, .account-details-newsletter h2{
+    font-size: 40px !important;
+    font-weight: 500;
+    font-family: "Manrope",sans-serif;
+
+}
+.account-details-signin p{
+    text-align: right;
+}
+
+.account-details-signin-details{
+    display: flex;
+    justify-content: left;
+}
+.account-details-signin-details div h4{
+font-size: 16px;
+text-align: left;
+padding-bottom: 15px;
+text-transform: capitalize;
+font-weight: 500;
+font-family: "Manrope",sans-serif;
+}
+.account-details-signin-details div{
+    padding-top: 30px;
+    width: 380px;
+
+}
+.account-details-signin-details div p{
+    text-align: left;
+    font-size: 18px;
+    /* text-transform: capitalize; */
+    font-weight: 500;
+    color: black;
+    font-family: "Manrope",sans-serif;
+    }
+.account-details-signin .Edit-signin{
+        /* text-align: left; */
+        cursor: pointer;
+        padding-top: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #E65909;
+        font-family: "Manrope",sans-serif;
+}
+.edit-signin-modal{
+    /* display: flex; */
+    /* padding-top: 8px; */
+    display: flex;
+    /* justify-content: center; */
+    align-content: center;
+    /* align-items: center; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(30, 71, 47, 0.45); 
+    /* background-color: #E65909; */
+}
+.edit-signin-modal-content{
+    /* border: 1px solid; */
+    margin:auto;
+    background-color: white;
+    border-radius: 24px;
+    width: 400px;
+    height: fit-content;
+    position: relative;
+    padding: 30px 50px;
+  
+  
+}
+.edit-signin-modal .closebtn{
+cursor: pointer;
+position: absolute;
+top: 20px;
+height: 20px;
+width: 20px;
+font-size: 22px;
+right: 20px;
+}
+
+.account-details-newsletter{
+    padding: 70px 0;
+    /* border-bottom: 1px solid; */
+    /* padding-bottom: 50px; */
+    display: flex;
+    /* justify-content: center; */
+    gap: 50px;
+    justify-items: center;
+    /* align-items: start; */
+}
+.account-details-newsletter div{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    /* align-items: start; */
+    /* justify-content: center; */
+    /* justify-items: center; */
+    /* border: 1px solid; */
+}
+.account-details-newsletter div input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    /* appearance: auto; Ensure default appearance is used */
+    background-color: #f0f0f0;  /* Background color when not checked */
+    border: 2px solid #ccc;  /* Border color when not checked */
+    border-radius: 5px;
+    cursor: pointer;  /* Make the cursor a pointer when hovering */
+}
+.account-details-newsletter div input[type="checkbox"]:checked {
+    /* appearance: none; */
+    background-color: green;  /* Change background color when checked */
+    border: 2px solid green;  /* Optional: Keeps border color consistent */
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+.account-details-newsletter div p{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+    padding-left: 10px;
+}
+.edit-signin-modal-content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    /* height: 100; */
+    /* border: 1px solid; */
+  
+}
+.edit-signin-modal-content h3{
+    font-size: 26px ;
+    font-weight: 600;
+    font-family: "Manrope", sans-serif;
+    padding: 18px 0 30px 0;
+}
+/* media query */
+@media (max-width: 1300px){
+    .edit-signin-modal-content h3{
+        font-size: 20px ;
+        /* background-color: #E65909; */
+        font-weight: 600;
+        padding: 15px 0 22px 0;
+        font-family: "Manrope", sans-serif;
+    }
+    .edit-signin-modal-content{
+        /* border: 1px solid; */
+        margin:auto;
+        background-color: white;
+        border-radius: 24px;
+        width: 350px;
+        height: fit-content;
+        position: relative;
+        padding: 22px 40px;
+    }
+    .edit-signin-modal-content form div input{
+        height: 40px !important;
+        border: rgb(231, 231, 231) 1px solid;
+        background-color: rgb(241, 241, 241);
+        padding: 0 10px;
+        outline: none;
+        border-radius: 12px;
+    }
+    .edit-signin-modal-content form div div label{
+        font-family: "Manrope", sans-serif;
+        font-weight: 500;
+        font-size: 16px !important;
+    }
+    .edit-signin-modal-content form button{
+        height: 50px !important;
+    }
+}
+.edit-signin-modal-content form div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.edit-signin-modal-content form div div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.edit-signin-modal-content form div div label{
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.edit-signin-modal-content form div input{
+    height: 3rem;
+    border: rgb(231, 231, 231) 1px solid;
+    background-color: rgb(241, 241, 241);
+    padding: 0 10px;
+    outline: none;
+    border-radius: 12px;
+}
+.edit-signin-modal-content form button{
+    background-color: green;
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    height: 55px;
+    align-self: flex-end;
+   margin-top: 10px;
+    border-radius: 12px;
+}

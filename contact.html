@@ -14,8 +14,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/order.css" />
-    <title>order status - Pecific Health</title>
+    <link rel="stylesheet" href="/css/contact.css" />
+    <title>Contact us - Pecific Health</title>
   </head>
   <body>
     <header>
@@ -50,7 +50,7 @@
             keyboard_arrow_down
             </span></a></li>
           <li><a href="/pages/about.html">About us</a></li>
-          <li><a  href="/pages/contact.html">Contact</a></li>
+          <li><a id="contact" href="/contact.html">Contact</a></li>
         </ul>
         <div class="navbar-icon-btns">
           <span class="material-symbols-outlined"> person </span>
@@ -59,74 +59,27 @@
       </nav>
     </div>
     </header>
-    
     <main>
-        <a href="/your-orders.html"><span class="material-symbols-outlined">
-            arrow_back
-            </span> Back to orders</a>
-        <h2>Order PHW3</h2>
-
-        <div class="order-details">
-            <div class="order-details-date">
-                <p>
-
-                    Date 
-                </p>
-                <p>
-
-                    11/04/14 00:00
-                </p>
-            </div>
-            <div class="order-details-address">
-                <div>
-                    <p>Delievry Address</p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At, illum.
-
-                    </p>
-                </div>
-                <div>
-                    <p>Delievry Address</p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At, illum.
-
-                    </p>
-                </div>
-            </div>
+      <section class="contact-container">
+        <h3>Contact us</h3>
+        <div>
+          <div class="contact-info-container">
+<div class="contact-address">
+  <h4>Pacific Health and Fitness Ltd</h4>
+    <p>
+      6 Gordon Road, Sandringham, Auckland 1025 PO Box 56248, Dominion Road, Auckland 1446 New Zealand 
+    </p>
+</div>
+<p>Hours: Monday - Friday : 9am - 5pm
+</p>
+<p>  Phone: +64 (9) 815 0707</p>
+          </div>
+          <div class="contact-map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30152.04200758623!2d72.98113855336933!3d19.15124743741644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1734578851480!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
-
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Code</th>
-                        <th>Product</th>
-                        <th>Qty</th>
-                        <th>RRp incl GST</th>
-                        <th>W/S excl GST</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr class="horizontal-line"></tr>
-                </thead>
-                <tbody id="table-body">
-                  
-                </tbody>
-            </table>
-    
-            <!-- <div class="pagination">
-                <button id="prev-btn" onclick="changePage(-1)"><span class="material-symbols-outlined">
-                    arrow_back
-                    </span> Previous </button>
-
-                    <div class=" right-side-table-navigation">
-
-                        <div id="page-numbers"></div>
-                        <button id="next-btn" onclick="changePage(1)">Next <span class="material-symbols-outlined">
-                            arrow_forward
-                        </span></button>
-                    </div>
-            </div> -->
-        </div>
+      </section>
     </main>
-
     <footer>
        <section class=" footer-newsletter">
         <p>Subscribe to our Newsletter</p>
@@ -212,7 +165,6 @@
 </div>
         </div>
     </footer>
-    <script src="/js/order.js"></script>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>

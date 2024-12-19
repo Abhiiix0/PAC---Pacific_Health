@@ -1,8 +1,8 @@
 // notification banner close logic
-const closeButton = document.getElementById("notification-banner-close-btn");
-const notificationBanner = document.getElementById("notification-banner");
+const closeButton = document?.getElementById("notification-banner-close-btn");
+const notificationBanner = document?.getElementById("notification-banner");
 
-closeButton.addEventListener("click", function () {
+closeButton?.addEventListener("click", function () {
   notificationBanner.style.display = "none";
 });
 

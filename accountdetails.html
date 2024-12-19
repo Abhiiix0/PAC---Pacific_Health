@@ -14,8 +14,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/order.css" />
-    <title>order status - Pecific Health</title>
+    <link rel="stylesheet" href="/css/accountdetails.css" />
+    <title>Account details - Pecific Health</title>
   </head>
   <body>
     <header>
@@ -61,70 +61,72 @@
     </header>
     
     <main>
-        <a href="/your-orders.html"><span class="material-symbols-outlined">
-            arrow_back
-            </span> Back to orders</a>
-        <h2>Order PHW3</h2>
-
-        <div class="order-details">
-            <div class="order-details-date">
-                <p>
-
-                    Date 
-                </p>
-                <p>
-
-                    11/04/14 00:00
-                </p>
-            </div>
-            <div class="order-details-address">
-                <div>
-                    <p>Delievry Address</p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At, illum.
-
-                    </p>
-                </div>
-                <div>
-                    <p>Delievry Address</p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At, illum.
-
-                    </p>
-                </div>
-            </div>
+        <div class=" account-details-heading">
+            
+            <h2>Account Details</h2>
+            <p>Last updated: 11/12/24 @3:22pm</p>
         </div>
+        <section class=" account-details-signin">
+            <h2>Sign in</h2>
+            <div class=" account-details-signin-details">
+                <div class="">
+                    <h4>Email</h4>
+                        <p>admin@admin.com</p>
+                   
+                </div>
+                <div>
+                    <h4>password</h4>
+                    <p>*************</p>
+                </div>
+            </div>
+          <p class="Edit-signin" id="Edit-signin">Edit sign in inforation</p>
+        </section>
 
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Code</th>
-                        <th>Product</th>
-                        <th>Qty</th>
-                        <th>RRp incl GST</th>
-                        <th>W/S excl GST</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr class="horizontal-line"></tr>
-                </thead>
-                <tbody id="table-body">
-                  
-                </tbody>
-            </table>
-    
-            <!-- <div class="pagination">
-                <button id="prev-btn" onclick="changePage(-1)"><span class="material-symbols-outlined">
-                    arrow_back
-                    </span> Previous </button>
+        <section class=" account-details-newsletter">
+            <h2>Newsletter</h2>
+            <div class=" account-details-newsletter-details">
+              <input type="checkbox" name="" id="">
+              <p>I would like to receive your newsletter</p>
+            </div>
+         
+        </section>
 
-                    <div class=" right-side-table-navigation">
 
-                        <div id="page-numbers"></div>
-                        <button id="next-btn" onclick="changePage(1)">Next <span class="material-symbols-outlined">
-                            arrow_forward
-                        </span></button>
+
+        <div id="edit-signin-modal" class="edit-signin-modal">
+            <div class="edit-signin-modal-content">
+
+            
+                <span id="closebtn" class="material-symbols-outlined closebtn">
+                    close
+                </span>
+<h3>Edit sign in information</h3>
+                <form action="" method="post">
+                    <div>
+
+                   
+                    <div>
+                        <label for="email">Email *</label>
+                        <input type="text">
                     </div>
-            </div> -->
+                    <div>
+                        <label for="email">Actual Password *</label>
+                        <input type="password">
+                    </div>
+                    <div>
+                        <label for="email">New Password *</label>
+                        <input type="password">
+                    </div>
+                    <div>
+                        <label for="email">Repeat New Password *</label>
+                        <input type="password">
+                    </div>
+                </div>
+                    <button>Save Changes</button>
+                </form>
+            </div>
         </div>
+
     </main>
 
     <footer>
@@ -212,7 +214,7 @@
 </div>
         </div>
     </footer>
-    <script src="/js/order.js"></script>
-    <script src="script.js"></script>
+    <script src="/js/accountDetails.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>

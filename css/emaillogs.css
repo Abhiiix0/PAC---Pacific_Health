@@ -1,5 +1,5 @@
 main h2{
-    padding: 50px 40px;
+    padding: 50px 40px 80px 40px;
     font-size: 80px;
     font-weight: 400;
     font-family: "Manrope", sans-serif;
@@ -61,7 +61,9 @@ tr.horizontal-line {
     border-bottom: 2px solid #ddd;
     font-family: "Manrope", sans-serif;
 }
-
+.emaillog-table-Description{
+    width: 400px;
+}
 .pagination {
 
     display: flex;
