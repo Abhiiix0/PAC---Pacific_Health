@@ -55,6 +55,13 @@ main{
     text-decoration: none;
     font-family: "Manrope", sans-serif;
 }
+.contact-num{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: "Manrope", sans-serif;
+    text-decoration: underline !important;
+}
 .contact-info-container div h4{
     font-size: 18px;
     font-weight: 700;
