@@ -1,7 +1,7 @@
 const data = [
   {
-    order: 4,
-    date: "2024-12-04",
+    order: "PHW3",
+    date: "11 April, 2014",
     amount: "$250",
     status: "Pending",
     activity: [
@@ -488,7 +488,7 @@ function renderTable() {
     const row = document.createElement("tr");
     row.innerHTML = `
           <td>${item.order}</td>
-        <td>${item.product}</td>
+        <td>${item.date}</td>
         <td>${item.amount}</td>
         <td>${item.status}</td>
         <td>

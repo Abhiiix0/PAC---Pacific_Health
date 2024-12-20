@@ -8,6 +8,14 @@
 }
 
 /* *********Header css********** */
+header, .home-main {
+    width: 100%; /* Allows the header to grow/shrink dynamically */
+    max-width: 1600px; /* Maximum width it can grow to */
+    min-width: 200px; /* Minimum width it can shrink to */
+    /* border: 1px solid; Example styling */
+    margin: 0 auto; /* Centers the header horizontally */
+}
+
 .notification-banner{
     transition: all 0.3s ease-in-out;
     background-color: #FADECE;
@@ -37,6 +45,7 @@
 .navbar {
     transition: all 0.3s ease-in-out;
     height: 158px;
+
     /* height: clamp(110px,5vh,158px) !important; */
     background-color: white;
     padding: 0 70px ;
@@ -244,8 +253,25 @@ footer .footer-newsletter .newsletter-input-container span{
     margin-right: -5px;
     color: #0A2926;
 }
+.news-container{
+    max-width: 1600px;
+    width: 100%;
+    min-width: 200px; /* Minimum width it can shrink to */
+    margin: 0 auto; /* Centers the header horizontally */
+}
+.footer-main-container{
+    background-color: #CED7D6;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
 footer .footer-main{
-    height: 440px;
+    max-width: 1460px !important;
+    /* border: 1px solid; */
+    /* min-width: 200px; */
+    margin: 0 auto;
+    /* width: 100%; */
+    /* width: 100%; */
+    height: 440px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -377,7 +403,7 @@ footer .footer-main .cc p{
         /* border: 1px solid; */
     }
     footer .footer-main{
-        padding: 105px 70px 64px 70px;
+        padding: 105px 70px 64px 70px !important;
     
     }
 }
@@ -386,11 +412,12 @@ footer .footer-main .cc p{
     padding-top: 30px !important;
     padding: 0 70px;
     background-color: white;
-    /* min-height: 574px; */
-
-    height: fit-content;
+    height: calc(100vh - 160px) !important; /* Fills the viewport minus header/footer */
+    min-height: 500px; /* Ensures it’s at least 500px tall */
     /* border: 1px solid; */
     display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Space out children elements */
     gap: 60px;
 }
 .hero-section div{
@@ -400,7 +427,7 @@ footer .footer-main .cc p{
 .hero-section div:last-child{
     display: flex;
     justify-content: right;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 .hero-section div:first-child{
@@ -708,10 +735,18 @@ flex-direction: row;
       }
   }
 
-  @media screen and (min-width: 1360px){
+  @media screen and (min-width: 1380px){
     .hero-section div div h2 {
         font-family: Coconat;
         font-size: 80px !important;
+        font-weight: 400;
+        line-height: 96px;
+    }
+}
+  @media screen and (min-width: 1360px){
+    .hero-section div div h2 {
+        font-family: Coconat;
+        font-size: 76px !important;
         font-weight: 400;
         line-height: 96px;
     }

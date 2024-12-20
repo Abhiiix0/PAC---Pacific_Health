@@ -1,12 +1,13 @@
 main h2{
-    padding: 50px 40px;
+    padding: 50px 70px;
     font-size: 80px;
     font-weight: 400;
-    font-family: "Manrope", sans-serif;
+    font-family: Coconat;
+    line-height: 28.8px;
 }
 .table-container {
     min-width: 1000px;
-    padding: 0 40px;
+    padding: 0 70px;
     margin: auto;
     background-color: white;
     border-radius: 8px;
@@ -31,13 +32,15 @@ th {
     padding-left: 20px;
     font-size: 18px;
     font-weight: 700;
+    line-height: 28.8px;
     text-align: left;
     /* border: 2px solid #ddd; */
     font-family: "Manrope", sans-serif;
 }
 
 td {
-    padding: 10px;
+    /* padding: 10px; */
+    height: 60px;
     padding: 35px 20px;
     vertical-align: text-top;
     font-size: 18px;
@@ -49,9 +52,17 @@ td {
 td p{
     margin: 0;
     margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0A2926;
+    border-bottom: 1px solid #ddd;
+    font-family: "Manrope", sans-serif;
 }
 td:last-child{
     /* color: red; */
+}
+td p{
+    text-decoration: none !important;
 }
 td a {
     text-decoration: none;
