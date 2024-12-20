@@ -39,7 +39,7 @@
     height: 158px;
     /* height: clamp(110px,5vh,158px) !important; */
     background-color: white;
-    padding: 0 68px ;
+    padding: 0 70px ;
     margin: 0 !important;
     display: flex;
     justify-content: space-between;
@@ -169,7 +169,7 @@
         /* border:1px solid; */
             height: 158px;
        
-            padding: 0 68px !important ;
+            padding: 0 70px !important ;
             margin: 0 !important;
             display: flex;
             justify-content: space-between;
@@ -206,13 +206,13 @@ footer .footer-newsletter{
     /* gap: 40px; */
     justify-content: center;
     align-items: center;
-    padding: 0 68px 15px 68px ;
+    padding: 0 70px 15px 70px ;
 
 }
 footer .footer-newsletter p{
-    font-size: 48px;
+    font-size: 50px;
     font-family: Coconat;
-    font-weight: 400;
+    font-weight: 400 !important;
     width: 100%;
     /* border: 1px solid; */
 }
@@ -253,7 +253,12 @@ footer .footer-main{
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     background-color: #CED7D6;
-    padding: 95px 68px 76px 68px;
+    padding: 95px 70px 76px 70px;
+
+}
+footer .footer-main .footer-main-content div a svg{
+width: 218.9px !important;
+height: 135.1px !important;
 
 }
 footer .footer-main .footer-main-content{
@@ -272,7 +277,7 @@ footer .footer-main .footer-main-content ul li{
     padding-bottom: 0px;
 }
 footer .footer-main .footer-main-content .footer-logo{
-    width: 210px;
+    width: 218px;
     
 }
 footer .footer-main .footer-main-content .footer-links h3{
@@ -360,25 +365,26 @@ footer .footer-main .cc p{
         /* gap: 40px; */
         justify-content: center;
         align-items: center;
-        padding: 0 68px 15px 68px ;
+        padding: 0 70px 15px 70px ;
     
     }
     footer .footer-newsletter p{
-        font-size: 48px;
+        font-size: 50px;
         font-family: Coconat;
-        font-weight: 400;
+        font-weight: 400 !important;
         width: 100%;
+        line-height: 60px;
         /* border: 1px solid; */
     }
     footer .footer-main{
-        padding: 95px 68px 76px 68px;
+        padding: 105px 70px 64px 70px;
     
     }
 }
 /* ********** hero section *************** */
 .hero-section{
     padding-top: 30px !important;
-    padding: 0 68px;
+    padding: 0 70px;
     background-color: white;
     /* min-height: 574px; */
 
@@ -393,7 +399,7 @@ footer .footer-main .cc p{
 }
 .hero-section div:last-child{
     display: flex;
-    justify-content: center !important;
+    justify-content: right;
 }
 
 .hero-section div:first-child{
@@ -484,13 +490,12 @@ flex-direction: row;
 } */
 
 .hero-content-img-container{
-    /* height: 600px; */
-    /* border: 1px solid; */
 }
 
 /* animation  */
 
 .hero-animation-container {
+   
     position: relative;
     transition: all 0.3s ease-in-out;
     width: 681px !important;
@@ -710,7 +715,7 @@ flex-direction: row;
         line-height: 96px;
     }
     .hero-section{
-        padding: 0 68px;
+        padding: 0 70px;
         gap: 60px;
     }
   }
@@ -719,7 +724,7 @@ flex-direction: row;
 /* ****************practitioner brand section********** */
  /* slider 1 */
  .my-swiper{
-    padding: 45px 68px 68px 68px;
+    padding: 45px 70px 68px 70px;
      /* border: 1px solid; */
  }
  .my-swiper h3{
@@ -783,10 +788,9 @@ flex-direction: row;
 
 .image-slider {
     position: relative;
-    /* width: 400px; */
-    height: 500px;
+    height: 510px;
     margin: 20px 20px;
-    border-radius: 24px;
+    border-radius: 24px !important;
     overflow: hidden;
   }
   
@@ -813,7 +817,7 @@ flex-direction: row;
   }
   @media screen and (min-width: 1364px){
     .my-swiper{
-        padding: 45px 68px 68px 68px !important;
+        padding: 45px 70px 68px 70px !important;
 
      }
   }
@@ -821,7 +825,7 @@ flex-direction: row;
 /* *********home features********** */
 .home-features {
 /* border: 1px solid black; */
-padding: 0px 68px;
+padding: 0px 70px;
 display: flex;
 gap: 22px;
 flex-direction: column;
@@ -832,7 +836,8 @@ flex-direction: column;
 .home-features .home-features-1{
   /* border: 1px solid; */
   overflow: hidden;
-    height: 480px;
+    height: 474px;
+    /* max-height: 0px; */
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -840,7 +845,7 @@ flex-direction: column;
 }
 .home-features .home-features-1 div{
     width: 100%;
-    padding: 60px 40px;  
+    padding: 60px 44px;  
     display: flex;
     flex-direction: column;
     padding-right: 50% !important;
@@ -851,7 +856,7 @@ flex-direction: column;
     
 }
 .home-features .home-features-1 .home-features-1-bgimg {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 0 !important;
     z-index: 1;
     width: 60%;
@@ -897,7 +902,7 @@ text-transform: uppercase;
  /* padding: 45px 26px; */
  padding: 60px 40px 40px 40px;  
  width: 100%;
- height: 373px;
+ height: 491px !important;
  display: flex;
  flex-direction: column;
  justify-content: space-between;
@@ -914,9 +919,9 @@ text-transform: uppercase;
     display: flex;
     justify-content: end;
    }
-.home-features-2-navigate img, .home-features-3-navigate img{
-    /* height: 130px; */
-    width: 130px;
+.home-features-2-navigate svg, .home-features-3-navigate svg{
+    height: 130px !important;
+    width: 130px !important;
 }
 .home-features-4-navigate img{
     height: 130px;
@@ -1062,7 +1067,7 @@ font-size: 24px;
   }
   @media screen and (min-width: 1360px){
     .home-features {
-        padding: 0px 68px !important;
+        padding: 0px 70px !important;
     }
     .home-features .home-features-1 h3{
         font-weight: 500;
@@ -1084,6 +1089,14 @@ font-size: 24px;
         margin-bottom: 25px;
      
      }  
+     .home-features .home-features-inner-container .home-features-2 div,.home-features-3 div,.home-features-4 div{
+        /* border: 1px solid; */
+     }
+     .home-features .home-features-inner-container .home-features-2,.home-features-3,.home-features-4{
+        padding-left: 44px !important;
+        padding-right: 44px !important;
+        /* border: 1px solid; */
+     }
      .home-features .home-features-inner-container .home-features-2 div p,.home-features-3 div p,.home-features-4 div p{
         cursor: pointer;
         font-size: 18px !important;

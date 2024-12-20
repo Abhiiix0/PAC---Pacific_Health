@@ -6,7 +6,7 @@
     /* border: 1px solid; */
 }
 .login-section .login-sideimg {
-    width: 56%;
+    width: 53.5%;
     border-radius: 24px;
     overflow: hidden;
     height: 803px;
@@ -19,7 +19,7 @@
 
 .login-section .login-form{
     padding-top: 98px;
-    width: 44%;
+    width: 46.5%;
     padding-left: 50px;
     /* border: 1px solid; */
     display: flex;
