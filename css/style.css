@@ -400,6 +400,7 @@ footer .footer-main .cc p{
 .hero-section div:last-child{
     display: flex;
     justify-content: right;
+    margin-right: 10px;
 }
 
 .hero-section div:first-child{
@@ -454,7 +455,7 @@ footer .footer-main .cc p{
 
 .hero-section .hero-content .hero-btns{
  /* margin-top: -5px; */
- padding-top: 20px;
+ padding-top: 15px;
     display: flex;
 justify-content: start !important;
 flex-direction: row;
@@ -496,13 +497,14 @@ flex-direction: row;
 
 .hero-animation-container {
    
-    position: relative;
+    position: relative !important;
     transition: all 0.3s ease-in-out;
     width: 681px !important;
     height: 574 !important;
     /* border: 1px solid; */
   }
   .hero-animation-container svg {
+
     transition: all 0.3s ease-in-out;
  width: 681px;
  height: 574;
@@ -585,13 +587,12 @@ flex-direction: row;
 
   .purple-layer {
     position: absolute;
-
     background-color: #7a4f9633;
     height: 40px;
     width: 40px;
     border-radius: 50%;
     z-index: 1;
-    opacity: 0.7;
+    opacity: 0.5;
     transition: transform 0.5s ease-in-out;
   }
 
@@ -619,7 +620,7 @@ flex-direction: row;
   }
 
   .black-layer {
-    position: absolute;
+    position: absolute !important;
     background-color: #142e36;
     height: 40px;
     width: 40px;
@@ -630,7 +631,7 @@ flex-direction: row;
   }
 
   .yellow-layer {
-    position: absolute;
+    position: absolute !important;
     background-color: #d6751433;
     height: 40px;
     width: 40px;
@@ -710,7 +711,7 @@ flex-direction: row;
   @media screen and (min-width: 1360px){
     .hero-section div div h2 {
         font-family: Coconat;
-        font-size: 80px;
+        font-size: 80px !important;
         font-weight: 400;
         line-height: 96px;
     }
