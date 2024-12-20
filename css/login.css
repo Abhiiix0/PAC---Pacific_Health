@@ -1,7 +1,7 @@
 .login-section{
     gap: 50px;
     margin-bottom: 50px;
-    padding: 0 40px;
+    padding: 0 68px;
     font-family: "manrope", sans-serif;
     display: flex;
     /* justify-content: center; */
@@ -11,7 +11,7 @@
     width: 100%;
     border-radius: 24px;
     overflow: hidden;
-    height: 900px;
+    height: 800px;
     border: #d5d5d5 1px solid;
 }
 
@@ -25,7 +25,7 @@
     flex-direction: column;
 }
 .login-section .login-form p{
-    font-size: 12px;
+    font-size: 28px;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -33,7 +33,7 @@
     font-size: 40px;
     font-weight: 500;
 }
-.login-section div img{
+.login-section .login-sideimg img{
     /* object-fit: cover; */
     margin-left: -90px;
     /* margin-bottom: 200px; */
@@ -42,9 +42,11 @@
     width: 130%;
 }
 .login-form form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    /* border: 1px solid; */
 }
 .login-form form div label{
     font-size: 16px;
@@ -61,8 +63,8 @@
     border-radius: 12px;
     background-color: #ECF2F2;
     outline: none;
-    width: 420px;
-    min-width: 300px;
+    max-width: 420px;
+    /* min-width: 300px; */
     padding: 0 20px;
     border: none;
 }
@@ -75,8 +77,8 @@
     background-color: #0A2926;
     border-radius: 12px;
     height: 66px;
-    width: 460px;
-    min-width: 300px;
+    max-width: 460px;
+    /* min-width: 300px; */
     color: white;
     font-size: 22px;
     font-weight: 600;
@@ -91,9 +93,9 @@
     border: #e1e1e1 1px solid;
     border-radius: 12px;
     height: 66px;
-    width: 380px;
+    max-width: 380px;
     padding-left: 80px;
-    min-width: 300px;
+    /* min-width: 300px; */
     color: rgb(0, 0, 0);
     font-size: 22px;
     font-family: "manrope", sans-serif;
@@ -121,3 +123,29 @@ gap: 10px;
     height: 30px;
     width: 30px;
 }
+@media screen and (min-width: 1024px){
+    .login-section{
+        gap: 50px;
+        margin-bottom: 50px;
+        padding: 0 50px ;
+        font-family: "manrope", sans-serif;
+        display: flex;
+        /* justify-content: center; */
+    
+    }
+           
+
+    }
+    @media screen and (min-width: 1364px){
+        .login-section{
+            gap: 50px;
+            margin-bottom: 50px;
+            padding: 0 64px ;
+            font-family: "manrope", sans-serif;
+            display: flex;
+            /* justify-content: center; */
+        
+        }
+               
+    
+        }

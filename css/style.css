@@ -9,6 +9,7 @@
 
 /* *********Header css********** */
 .notification-banner{
+    transition: all 0.3s ease-in-out;
     background-color: #FADECE;
     border-radius: 12px;
     padding: 0px;
@@ -34,8 +35,9 @@
    cursor: pointer;
 }
 .navbar {
-/* border:1px solid; */
+    transition: all 0.3s ease-in-out;
     height: 158px;
+    /* height: clamp(110px,5vh,158px) !important; */
     background-color: white;
     padding: 0 68px ;
     margin: 0 !important;
@@ -54,10 +56,13 @@
 .navbar .navbar-link-btn{
     display: flex;
     gap: 70px;
+    transition: all 0.3s ease-in-out;
     /* border: 2px solid black; */
     align-items: center;
 }
-
+.navbar svg{
+    transition: all 0.3s ease-in-out;
+}
 .navbar ul li a {
      text-decoration: none;
      color: #0A2926;
@@ -76,6 +81,7 @@
     margin-top: 4px;
 }
 .navbar ul{
+    transition: all 0.3s ease-in-out;
     display: flex;
     list-style: none;
     gap: 35px;
@@ -85,6 +91,7 @@
     align-items: center;
     justify-content: center;
     gap: 45px;
+    transition: all 0.3s ease-in-out;
 }
 .navbar .navbar-icon-btns span{
     cursor: pointer;
@@ -101,8 +108,7 @@
     }
     .navbar {
         /* border:1px solid; */
-            height: 158px;
-       
+            height: 148px;
             padding: 0 50px ;
             margin: 0 !important;
             display: flex;
@@ -313,7 +319,24 @@ footer .footer-main .cc p{
     font-size: 10px;
     font-weight: 400;
 }
-
+@media screen and (min-width: 1024px){
+    footer .footer-newsletter p{
+        font-size: 3vw;
+        font-family: Coconat;
+        font-weight: 400;
+        width: 100%;
+        /* border: 1px solid; */
+    }
+}
+@media screen and (min-width: 1370px){
+    footer .footer-newsletter p{
+        font-size: 48px;
+        font-family: Coconat;
+        font-weight: 400;
+        width: 100%;
+        /* border: 1px solid; */
+    }
+}
 /* ********** hero section *************** */
 .hero-section{
     overflow: hidden;
@@ -765,6 +788,7 @@ text-transform: uppercase;
 .home-features .home-features-1 h3{
     font-weight: 500;
     font-size: 38px;
+    /* font-size: clamp(20px, 3vw, 38px); */
     color: #0A2926;
     font-family: "Manrope", sans-serif;
 }
@@ -949,7 +973,7 @@ font-size: 24px;
   @media screen and (min-width: 1360px){
     .home-features .home-features-1 h3{
         font-weight: 500;
-        font-size: 36px;
+        font-size: 36px !important;
         color: #0A2926;
         font-family: "Manrope", sans-serif;
     }
