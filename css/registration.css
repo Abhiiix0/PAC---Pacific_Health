@@ -1,0 +1,130 @@
+main{
+    max-width: 1600px;
+  
+    width: 100%;
+    margin: 0 auto;
+    min-width: 200px; 
+    font-family: "Manrope" !important;
+}
+.registration-container{
+    padding: 0 70px;
+    display: flex;
+    gap: 115px;
+}
+.registration-container .registration-img-container{
+    background: url('/images/registration/signup.jpg');
+    border-radius: 24px;
+    background-position: center;
+    background-size: cover;
+    width: 720px;
+    height: 1053px;
+    
+}
+.registration-container .registration-form-container{
+    max-width: 610px !important;
+    margin-bottom: 228px;
+}
+.regstraion-form-title{
+    margin-top: 102px;
+    font-size: 40px;
+    color:  #0A2926;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+form{
+    margin-top: 69px;
+}
+form .registration-form-section-one h4, .registration-form-section-two h4{
+    color:#0A2926;
+    font-family: Manrope;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44.8px ;
+}
+.registration-form-section-two h4{
+    padding-top: 24px;
+}
+.form-section-one-field-container, .form-section-two-field-container{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0;
+}
+.registration-field{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.registration-field label{
+    max-width: 458px;
+    width: 100%;
+    color: #546967;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 25.6px;
+display: flex;
+justify-content: space-between;
+}
+.registration-field label span{
+    padding-bottom: -1px;
+    color: #546967;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.6px;
+   border-bottom: 1px solid;
+}
+.registration-field input{
+    width: 100%;
+    max-width: 458.083px;
+    height: 66px;
+    border-radius: 12px;
+    border: 2px solid #ECF2F2;
+    background:  #F9F9F9;
+}
+.registration-form-btns{
+    margin-top: 92px;
+}
+.registration-form-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.registration-form-btns button{
+    border: none;
+    width: 460px;
+height: 66px;
+border-radius: 12px;
+text-align: center;
+font-size: 22px;
+font-family: "Manrope";
+font-weight: 600;
+line-height: 160%; /* 35.2px */
+cursor: pointer;
+}
+.registration-form-signup-btns{
+    background: #0A2926;
+    color: #FFF;
+}
+.registration-form-cancel-btns{
+    background: #F9F9F9;
+    color: #0A2926;
+}
+@media screen and (min-width:1024px) {
+    .registration-container{
+        padding: 0 50px;
+        display: flex;
+        gap: 50px;
+    }
+}
+@media screen and (min-width:1364px) {
+    .registration-container{
+        padding: 0 70px;
+        gap: 115px;
+    }
+}
