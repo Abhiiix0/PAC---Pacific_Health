@@ -44,6 +44,9 @@ form .registration-form-section-one h4, .registration-form-section-two h4{
     font-weight: 500;
     line-height: 44.8px ;
 }
+form .registration-form-section-one{
+    padding-bottom: 5px;
+}
 .registration-form-section-two h4{
     padding-top: 24px;
 }
@@ -69,23 +72,38 @@ font-weight: 500;
 line-height: 25.6px;
 display: flex;
 justify-content: space-between;
+align-items: center;
 }
 .registration-field label span{
-    padding-bottom: -1px;
+    margin-bottom: -6px;
     color: #546967;
-    font-size: 14px !important;
-    font-style: normal;
+    font-size: 12px !important;
     font-weight: 500;
-    line-height: 25.6px;
    border-bottom: 1px solid;
+   text-decoration-thickness: 1px; 
+    line-height: 1.5;
 }
 .registration-field input{
     width: 100%;
-    max-width: 458.083px;
+    max-width: 416px;
     height: 66px;
     border-radius: 12px;
     border: 2px solid #ECF2F2;
     background:  #F9F9F9;
+    font-size: 18px;
+font-style: normal;
+outline: none;
+font-weight: 500;
+color: #546967;
+padding: 0 21px;
+}
+.registration-field input::placeholder{
+    color: #546967;
+font-family: "Manrope";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 28.8px ;
 }
 .registration-form-btns{
     margin-top: 92px;
