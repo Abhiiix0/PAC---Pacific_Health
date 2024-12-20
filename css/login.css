@@ -1,48 +1,46 @@
 .login-section{
-    gap: 50px;
     margin-bottom: 50px;
     padding: 0 68px;
     font-family: "manrope", sans-serif;
     display: flex;
-    /* justify-content: center; */
-
+    /* border: 1px solid; */
 }
-.login-section .login-sideimg{
-    width: 100%;
+.login-section .login-sideimg {
+    width: 56%;
     border-radius: 24px;
     overflow: hidden;
-    height: 800px;
+    height: 803px;
     border: #d5d5d5 1px solid;
+    background-image: url('/images/Login/tree.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 .login-section .login-form{
-    width: 100%;
+    padding-top: 98px;
+    width: 44%;
+    padding-left: 50px;
     /* border: 1px solid; */
     display: flex;
-    justify-content: center;
     gap: 45px;
-    /* align-items: center; */
     flex-direction: column;
 }
 .login-section .login-form p{
     font-size: 28px;
     font-weight: 500;
+    line-height: 44.8px;
     text-transform: uppercase;
 }
 .login-section .login-form h3{
     font-size: 40px;
     font-weight: 500;
-}
-.login-section .login-sideimg img{
-    /* object-fit: cover; */
-    margin-left: -90px;
-    /* margin-bottom: 200px; */
-    margin-top: -200px;
-    height: 130%;
-    width: 130%;
+    line-height: 52px;
 }
 .login-form form {
     width: 100%;
+    max-width: 460px;
+
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -68,9 +66,16 @@
     padding: 0 20px;
     border: none;
 }
+.login-form form div input::placeholder{
+    line-height: 28.8px;
+    font-size: 18px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+}
 .login-form form hr{
-    width: 150px;
-    margin-left: 22%;
+    width: 111px;
+text-align: center;
+align-self: center;
 }
 .login-form form .login-continue-btn{
     cursor: pointer;
@@ -94,7 +99,8 @@
     border-radius: 12px;
     height: 66px;
     max-width: 380px;
-    padding-left: 80px;
+    padding-left: 50px;
+    padding-right: 30px;
     /* min-width: 300px; */
     color: rgb(0, 0, 0);
     font-size: 22px;
@@ -116,7 +122,6 @@ gap: 10px;
     text-transform: capitalize;
 }
 .login-form form  .login-google-btn img{
-    /* align-self: center; */
     margin-top: 3px;
     /* display: none; */
     
@@ -125,16 +130,18 @@ gap: 10px;
 }
 @media screen and (min-width: 1024px){
     .login-section{
-        gap: 50px;
         margin-bottom: 50px;
         padding: 0 50px ;
         font-family: "manrope", sans-serif;
         display: flex;
-        /* justify-content: center; */
-    
+        gap: 20px;
     }
            
-
+    .login-section .login-form h3{
+        font-size: 3vw;
+        font-weight: 500;
+        line-height: 52px;
+    }
     }
     @media screen and (min-width: 1364px){
         .login-section{
@@ -145,6 +152,11 @@ gap: 10px;
             display: flex;
             /* justify-content: center; */
         
+        }
+        .login-section .login-form h3{
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 52px;
         }
                
     
