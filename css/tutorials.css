@@ -1,0 +1,154 @@
+main{
+    max-width: 1600px; 
+    width: 100%;
+    margin: 0 auto;
+    min-width: 200px; 
+    font-family: "Manrope" !important;
+}
+.tutorials-container{
+    padding: 0 70px;
+    margin-top: 80px;
+    margin-bottom: 79px;
+}
+.tutorials-container h3{
+    color: #0A2926;
+font-family: Coconat;
+font-size: 80px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 96px */
+}
+.tutorials-videos{
+    margin-top: 93px;
+    margin-bottom: 242px;
+    display: flex;
+    gap: 20px;
+}
+.tutorial-vd{
+    height: fit-content;
+max-width: 720px;
+width: 100%;
+}
+.thumbnail{
+max-height: 405px;
+    width: 100%;
+    background-color: antiquewhite;
+    max-height: 405px;
+    border-radius: 24px;
+    height: 100%;
+}
+.tutorial-vd-title-duration{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 31px;
+}
+.tutorial-vd-title-duration h4{
+    color: #0A2926;
+
+font-family: "Manrope";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; 
+}
+.tutorial-vd-title-duration p{
+
+    margin-top:8px;
+    color: #0A2926;
+text-align: right;
+font-family: "Manrope";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 19.2px */
+letter-spacing: 2.16px;
+text-transform: uppercase;
+}
+.tutorial-vd-desc{
+    margin-top: 10px;
+    display: -webkit-box; 
+    -webkit-line-clamp: 3 !important; 
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    max-width: 530px;
+    width: 100%;
+color: #0A2926;
+/* border: 1px solid; */
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 28.8px */
+}
+.tutorials-videos-pagination button{
+    background-color: white;
+ cursor: pointer;
+    border: none;
+    padding: 0 10px;
+    color: #0A2926;
+    height: 45px;
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 28.8px */
+display: flex ;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+}
+.tutorials-videos-pagination{
+    display: flex;
+    justify-content: space-between;
+}
+.tutorials-videos-pagination button svg{
+    width: 16px;
+    height: 16px;
+}
+.right-side-btns-pagination{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.pagination-numbers{
+    display: flex;
+    gap: 8px;
+    align-self: flex-end !important;
+}
+.pagination-numbers .active{
+    width: 45px !important;
+    background-color: #CED4D4 !important;
+}
+.pagination-numbers p{
+    cursor: pointer;
+    display: flex;
+    width: 45px ;
+    padding: 8px 0;
+
+    justify-content: center;
+align-items: center;
+    color: #0A2926;
+    border-radius: 8px;
+font-family: "Manrope";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 28.8px */
+}
+@media screen and (min-width:1024px) {
+    .tutorials-container{
+        padding: 0 50px;
+        margin-top: 80px;
+        margin-bottom: 79px;
+    }
+}
+@media screen and (min-width:1364px) {
+    .tutorials-container{
+        padding: 0 70px !important;
+        margin-top: 80px;
+        margin-bottom: 79px;
+    }
+}
