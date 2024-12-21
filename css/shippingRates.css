@@ -1,0 +1,115 @@
+main{
+    max-width: 1600px;
+  
+    width: 100%;
+    margin: 0 auto;
+    min-width: 200px; 
+    font-family: "Manrope" !important;
+}
+.shipping-rates-container{
+    margin: 0 auto;
+padding: 0 70px;
+/* border: 1px solid; */
+}
+.shipping-rates-container .shipping-rates-title{
+    color: #0A2926;
+    margin-top: 80px;
+    margin-bottom: 53px;
+    font-family: Coconat;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 96px */
+}
+.shipping-rates-content{
+    display: flex;
+    flex-direction: column;
+    /* gap: 50px; */
+  
+}
+.shipping-rates-content p{
+    color: #0A2926;
+margin: 0;
+padding: 0;
+font-family: "Manrope";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; 
+}
+.newZealand-Shipping-titles1{
+    height: 87px;
+}
+.newZealand-Shipping-titles2{
+   
+    margin-top: -10px !important;
+}
+table{
+    /* border:  1px solid black; */
+    margin-top: 40px;
+    text-align: left;
+    border-collapse: collapse;
+}
+table thead tr th{
+    padding: 14px 0;
+    border-bottom:  1px solid black;
+}
+table thead tr th,table tbody tr td  {
+    color: #000;
+font-family: "Manrope";
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 160%; /* 28.8px */
+}
+table tbody tr{
+    border-bottom: #CED4D4 1px solid !important;
+}
+table tbody tr td {
+    font-weight: 500;
+    line-height: 160%; /* 28.8px */
+    padding: 14px 0;
+}
+table tbody tr:last-child{
+    border-bottom: none !important;
+}
+.shipping-rates-para-container{
+    margin-top: 73px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 537px;
+}
+.para-container1 h3,.para-container2 h3{
+    color: #0A2926;
+    font-family: "Manrope";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    padding-bottom: 5px;
+    line-height: 160%; /* 44.8px */
+}
+.para-container1 p, .para-container2 p{
+    color: #0A2926;
+font-family: "Manrope";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+}
+@media screen and (min-width:1024px) {
+    .shipping-rates-container{
+        padding: 0 50px;
+    }
+}
+@media screen and (min-width:1085px) {
+    .shipping-rates-container{
+    width: 967px;
+    }
+}
+@media screen and (min-width:1364px) {
+    .shipping-rates-container{
+        padding: 0 70px;
+  
+    }
+}
