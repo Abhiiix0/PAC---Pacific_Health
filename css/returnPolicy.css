@@ -7,7 +7,8 @@ main{
     font-family: "Manrope" !important;
 }
 .return-policy-container{
-    width: 967px;
+    /* width: 100%; */
+    /* max-width: 967px !important; */
     margin: 0 auto;
 height: 1309px;
 padding: 0 70px;
@@ -77,4 +78,20 @@ line-height: 160%; /* 28.8px */
 }
 .address-info p{
     margin-bottom: 35px;
+}
+@media screen and (min-width:1024px) {
+    .return-policy-container{
+        padding: 0 50px;
+    }
+}
+@media screen and (min-width:1065px) {
+    .return-policy-container{
+    width: 967px;
+    }
+}
+@media screen and (min-width:1364px) {
+    .return-policy-container{
+        padding: 0 70px;
+  
+    }
 }
