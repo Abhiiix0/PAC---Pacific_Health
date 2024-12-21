@@ -40,6 +40,21 @@ font-weight: 500;
 line-height: 160%; /* 28.8px */
 margin-left: 20px;
 }
+.terms-and-conditions-link{
+    color: #0A2926;
+font-family: "Manrope";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+text-decoration-line: underline;
+text-decoration-color: rgb(156, 156, 156);
+text-decoration-style: solid;
+text-decoration-skip-ink: none;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+}
 .address-info h3{
     color: #0A2926;
 font-family: "Manrope";
