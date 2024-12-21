@@ -84,7 +84,7 @@ line-height: 160%; /* 28.8px */
         padding: 0 50px;
     }
 }
-@media screen and (min-width:1065px) {
+@media screen and (min-width:1085px) {
     .return-policy-container{
     width: 967px;
     }
