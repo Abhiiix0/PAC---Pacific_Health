@@ -1,34 +1,54 @@
-main h2{
-    padding: 50px 40px;
+main{
+    max-width: 1600px; /* Maximum width it can grow to */
+    min-width: 200px; /* Minimum width it can shrink to */
+    /* border: 1px solid; */
+    margin: 0 auto; /* Centers the header horizontally */
+}
+.client-order-container{
+    padding: 0 70px;
+}
+.wrapper-title-input{
+    margin: 80px 0 49px 0;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper-title-input h2{
+    color: #0A2926;
+    font-family: Coconat;
     font-size: 80px;
+    font-style: normal;
     font-weight: 400;
-    font-family: "Manrope", sans-serif;
+    line-height: 120%; /* 96px */
 }
 .order-status-search{
-    /* margin-bottom: 50px; */
-    margin: 0 40px;
-    border-bottom: #CED4D4 1px solid;
-    /* border: 1px solid; */
+    border-bottom: 2px solid #CED4D4;
     height: 60px;
-    width: 450px;
+    width: 458px;
     display: flex;
     gap: 10px;
-    /* justify-content: center; */
     align-items: center;
 }
 .order-status-search input{
     font-size: large;
     outline: none;
     height: 100%;
-    /* padding: 0 10px; */
     border: none;
     width: 100%;
+    font-family: "Manrope";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 28.8px */
 }
 .order-status-search input::placeholder{
-    font-size: 18px;
-    font-weight: 500;
-    font-family: "Manrope", sans-serif;
     color: #CED4D4;
+    font-family: "Manrope";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 28.8px */
 }
 .order-status-search img{
     width: 22px;
@@ -36,9 +56,7 @@ main h2{
 }
 
 .table-container {
-    padding-top: 80px !important;
     min-width: 1000px;
-    padding: 0 40px;
     margin: auto;
     background-color: white;
     border-radius: 8px;
@@ -52,54 +70,49 @@ table {
     border-collapse: collapse;
 }
 
-thead tr th{
-   
-}
-th {
+ thead{
     background-color: #F9F9F9; /* slate-200 */
-    height: 60px;
-    min-width: 150px;
-   max-width: 400px;
-    padding-left: 20px;
-    font-size: 18px;
-    font-weight: 700;
+    border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+ }
+th {
+ 
+    padding: 18px 24px;
     text-align: left;
-    /* border: 2px solid #ddd; */
-    font-family: "Manrope", sans-serif;
+    color: #0A2926;
+    font-family: "Manrope";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 28.8px */
+    border: none;
 }
 
 td {
-    padding: 10px;
-    /* padding-left: 20px; */
-    padding: 35px 20px;
-    vertical-align: text-top;
-    font-size: 18px;
-    font-weight: 500;
+    text-align: left;
+    padding: 34px 24px;
+    /* vertical-align: text-top; */
     color: #0A2926;
-    border-bottom: 1px solid #ddd;
-    font-family: "Manrope", sans-serif;
-}
-td p{
-    margin: 0;
-    margin-bottom: 15px;
-}
-td:last-child{
-    /* color: red; */
+    font-family: "Manrope";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 28.8px */
 }
 td a {
     text-decoration: none;
     color: #E65909;
 }
-tr.horizontal-line {
-    border-bottom: 2px solid #ddd;
-    font-family: "Manrope", sans-serif;
+thead tr {
+    border-bottom: none !important;
 }
-
+tr{
+    border-bottom: 1px solid gainsboro;
+}
 .pagination {
-
     display: flex;
     justify-content: space-between;
-    padding: 120px 0;
+    padding: 135px 0 129px 0;
 }
 .right-side-table-navigation{
     display: flex;
@@ -107,26 +120,22 @@ tr.horizontal-line {
 }
 .pagination #prev-btn,#next-btn {
     padding: 5px 15px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
     display: flex;
-    font-family: "Manrope", sans-serif;
-    gap: 5px;
+    gap: 8px;
     align-items: center;
-    background-color: white;
-    color: rgb(0, 0, 0);
-    /* border: 1px solid; */
-    border: none;
-    border-radius: 5px;
+    color: #0A2926;
+  border: none;
+  background-color: white;
+    font-family: "Manrope";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 28.8px */
 }
 .pagination button span{
     height: 16px;
     font-size: medium;
     width: 16px;
-}
-.pagination button:hover {
-    /* background-color: #2b6cb0; */
 }
 
 #page-numbers {
@@ -136,18 +145,49 @@ tr.horizontal-line {
 
 #page-numbers span {
     margin: 0 8px;
-    cursor: pointer;
+  color: #546967;
+    font-family: "Manrope";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 28.8px */
 }
-#page-numbers span.active {
+#page-numbers span .active {
     background-color: #CED4D4;
-    /* padding: 10px; */
+    color: #0A2926;
     display: grid;
     place-items: center;
     border-radius: 8px;
-    height: 40px;
-    width: 40px;
-    color: black;
+    height: 45px;
+    margin: 45px;
+    /* width: 45px !important; */
   }
-#page-numbers span:hover {
-    /* background-color: #e7e7e7; */
-}
+  @media screen and (min-width: 1024px){
+    .client-order-container{
+        padding: 0 50px;
+    }
+    th{
+        font-size: 10px;
+        padding: 12px 10px;
+    }
+    td{
+        font-size: 10px;
+        padding: 20px 10px;
+    }
+    .wrapper-title-input h2{
+        font-size: 5vw;
+    }
+  }
+  @media screen and (min-width: 1364px){
+    .client-order-container{
+        padding: 0 70px;
+    }
+    th{
+        font-size: 18px;
+        padding: 18px 24px;
+    }
+    td{
+        font-size: 18px;
+        padding: 34px 24px;
+    }
+  }

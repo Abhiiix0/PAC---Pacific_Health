@@ -238,7 +238,7 @@ function renderPagination() {
     pageNumber.textContent = page;
     pageNumber.style.cursor = "pointer";
     pageNumber.style.margin = "0 5px";
-    pageNumber.style.padding = "8px 15px";
+    pageNumber.style.padding = "8px 18px";
     pageNumber.style.borderRadius = "5px";
 
     if (page === currentPage) {

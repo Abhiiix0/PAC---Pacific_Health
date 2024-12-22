@@ -81,12 +81,18 @@
     </header>
     
     <main>
+      <div class="client-order-container">
+
+    
+      <div class="wrapper-title-input">
+
         <h2>Your client orders</h2>
         <div class="order-status-search">
           <input name="srch" id="order-status-search-input" type="text" placeholder="Search for order number, date, client...">
           <img src="/images/OrderStatus/Search.png" alt="">
-
+          
         </div>
+      </div>
         <div class="table-container">
             <table>
                 <thead>
@@ -109,19 +115,20 @@
             </table>
     
             <div class="pagination">
-                <button id="prev-btn" onclick="changePage(-1)"><span class="material-symbols-outlined">
-                    arrow_back
-                    </span> Previous </button>
+                <button id="prev-btn" onclick="changePage(-1)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                  <path d="M12.6663 8.50001H3.33301M3.33301 8.50001L7.99967 13.1667M3.33301 8.50001L7.99967 3.83334" stroke="#0A2926" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg> Previous </button>
 
                     <div class=" right-side-table-navigation">
 
                         <div id="page-numbers"></div>
-                        <button id="next-btn" onclick="changePage(1)">Next <span class="material-symbols-outlined">
-                            arrow_forward
-                        </span></button>
+                        <button id="next-btn" onclick="changePage(1)">Next <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                          <path d="M3.33301 8.50001H12.6663M12.6663 8.50001L7.99967 3.83334M12.6663 8.50001L7.99967 13.1667" stroke="#0A2926" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></button>
                     </div>
             </div>
         </div>
+      </div>
     </main>
 
     <footer>
