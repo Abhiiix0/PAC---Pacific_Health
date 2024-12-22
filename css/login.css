@@ -10,8 +10,6 @@ main{
     padding: 0 70px;
     font-family: "manrope", sans-serif;
     display: flex;
-    gap: 101px;
-    /* border: 1px solid; */
     margin-bottom: 121px;
 }
 .login-section .login-sideimg {
@@ -29,7 +27,9 @@ main{
 
 .login-section .login-form{
     padding-top: 102px;
-    width: 100%;
+    padding-left: 101px;
+    width: calc(100% - 101px);
+    box-sizing: border-box;
     display: flex;
     gap: 43px;
     flex-direction: column;
@@ -161,13 +161,16 @@ gap: 10px;
 @media screen and (min-width: 1024px){
     .login-section{
         padding: 0 50px ;
-        gap: 60px;
+        /* gap: 60px; */
     }
            
     .login-section .login-form h3{
         font-size: 3vw;
         font-weight: 500;
         line-height: 52px;
+    }
+    .login-section .login-form{
+        padding-left: 60px;
     }
     }
     @media screen and (min-width: 1145px){
@@ -179,7 +182,10 @@ gap: 10px;
     @media screen and (min-width: 1364px){
         .login-section{
             padding: 0 70px ;
-            gap: 101px;
+            /* gap: 101px; */
+        }
+        .login-section .login-form{
+            padding-left: 101px;
         }
     
         }
