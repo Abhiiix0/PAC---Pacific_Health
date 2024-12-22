@@ -697,7 +697,8 @@ flex-direction: row;
 /* ****************practitioner brand section********** */
  /* slider 1 */
  .my-swiper{
-    padding: 0 70 33px 70px;
+    padding: 0 70px 33px 70px;
+ 
  }
  .my-swiper h3{
     padding-bottom: 10px;
@@ -734,7 +735,18 @@ flex-direction: row;
     display: none;
  
 }
+@media screen and (min-width: 1024px){
+    .my-swiper{
+        padding: 0 50px 33px 50px;
 
+     }
+  }
+  @media screen and (min-width: 1364px){
+    .my-swiper{
+        padding: 0 70px 33px 70px;
+
+     }
+  }
 
 
 
@@ -1076,16 +1088,5 @@ height: 18px !important;
     opacity: 1;
   }
 
-  @media screen and (min-width: 1024px){
-    .my-swiper{
-        padding: 20px !important;
 
-     }
-  }
-  @media screen and (min-width: 1364px){
-    .my-swiper{
-        padding:  20px !important;
-
-     }
-  }
 
