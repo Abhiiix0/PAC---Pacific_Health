@@ -305,12 +305,12 @@ footer .footer-main .footer-main-content .footer-links h3{
 }
 footer .footer-main .footer-main-content .footer-links{
     display: flex;
-    gap: 50px;
+    gap: 212px;
 }
 footer .footer-main .footer-main-content .footer-links .touch-help{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 64px;
 }
 footer .footer-main .footer-main-content .footer-links ul li a {
     color: #0A2926;
