@@ -393,7 +393,6 @@ footer .footer-main .cc p{
     background-color: white;
     /* height: calc(100vh - 160px) !important; Fills the viewport minus header/footer */
     /* min-height: 500px; Ensures it’s at least 500px tall */
-    border: 1px solid;
     display: flex;
     justify-content: space-between;
     gap: 60px;
