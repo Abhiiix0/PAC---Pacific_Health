@@ -9,11 +9,10 @@
 
 /* *********Header css********** */
 header, .home-main {
-    width: 100%; /* Allows the header to grow/shrink dynamically */
-    max-width: 1600px; /* Maximum width it can grow to */
-    min-width: 200px; /* Minimum width it can shrink to */
-    /* border: 1px solid; Example styling */
-    margin: 0 auto; /* Centers the header horizontally */
+    width: 100%; 
+    max-width: 1600px; 
+    min-width: 200px;
+    margin: 0 auto;
 }
 
 .notification-banner{
@@ -45,8 +44,6 @@ header, .home-main {
 .navbar {
     transition: all 0.3s ease-in-out;
     height: 158px;
-
-    /* height: clamp(110px,5vh,158px) !important; */
     background-color: white;
     padding: 0 70px ;
     margin: 0 !important;
@@ -64,9 +61,8 @@ header, .home-main {
 }
 .navbar .navbar-link-btn{
     display: flex;
-    gap: 70px;
+    gap: 74px;
     transition: all 0.3s ease-in-out;
-    /* border: 2px solid black; */
     align-items: center;
 }
 .navbar svg{
@@ -93,7 +89,7 @@ header, .home-main {
     transition: all 0.3s ease-in-out;
     display: flex;
     list-style: none;
-    gap: 35px;
+    gap: 58px;
 }
 .navbar .navbar-icon-btns{
     display: flex;
@@ -170,14 +166,9 @@ header, .home-main {
 @media screen and (min-width: 1360px){
     .navbar .logo a svg{
         height: 38px;
-        /* background-color: #C4D9FF; */
-        /* font-size: 50px; */
-        /* padding: 2px; */
     }
     .navbar {
-        /* border:1px solid; */
             height: 158px;
-       
             padding: 0 70px !important ;
             margin: 0 !important;
             display: flex;
@@ -191,15 +182,14 @@ header, .home-main {
     }
     .navbar .navbar-link-btn{
         display: flex;
-        gap: 70px;
-        /* border: 2px solid black; */
+        gap: 74px;
         align-items: center;
     }
     .navbar .navbar-icon-btns{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 45px;
+        gap: 44px;
     }
   }
 /* ********** Footer section *********** */
@@ -266,11 +256,7 @@ footer .footer-newsletter .newsletter-input-container span{
 }
 footer .footer-main{
     max-width: 1460px !important;
-    /* border: 1px solid; */
-    /* min-width: 200px; */
     margin: 0 auto;
-    /* width: 100%; */
-    /* width: 100%; */
     height: 440px; 
     display: flex;
     flex-direction: column;
@@ -317,14 +303,12 @@ footer .footer-main .footer-main-content .footer-links h3{
 }
 footer .footer-main .footer-main-content .footer-links{
     display: flex;
-    /* justify-content: ; */
     gap: 50px;
 }
 footer .footer-main .footer-main-content .footer-links .touch-help{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    /* border: 1px solid black; */
 }
 footer .footer-main .footer-main-content .footer-links ul li a {
     text-decoration: none;
@@ -332,7 +316,6 @@ footer .footer-main .footer-main-content .footer-links ul li a {
     font-weight: 600;
     font-family: "Manrope", sans-serif;
     color: black;
-
 }
 
 footer .footer-main .cc {
@@ -379,7 +362,6 @@ footer .footer-main .cc p{
         border-top-right-radius: 24px;
         background-color: #CED7D6;
         padding: 95px 50px 76px 50px;
-    
     }
 }
 @media screen and (min-width: 1360px){
@@ -388,7 +370,6 @@ footer .footer-main .cc p{
         background-color: #EBEFEF;
         display: flex;
         gap: 20px;
-        /* gap: 40px; */
         justify-content: center;
         align-items: center;
         padding: 0 70px 15px 70px ;
@@ -400,7 +381,6 @@ footer .footer-main .cc p{
         font-weight: 400 !important;
         width: 100%;
         line-height: 60px;
-        /* border: 1px solid; */
     }
     footer .footer-main{
         padding: 105px 70px 64px 70px !important;
@@ -409,15 +389,13 @@ footer .footer-main .cc p{
 }
 /* ********** hero section *************** */
 .hero-section{
-    padding-top: 30px !important;
-    padding: 0 70px;
+    padding: 20px 70px 0px 70px;
     background-color: white;
-    height: calc(100vh - 160px) !important; /* Fills the viewport minus header/footer */
-    min-height: 500px; /* Ensures it’s at least 500px tall */
-    /* border: 1px solid; */
+    /* height: calc(100vh - 160px) !important; Fills the viewport minus header/footer */
+    /* min-height: 500px; Ensures it’s at least 500px tall */
+    border: 1px solid;
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: space-between; /* Space out children elements */
+    justify-content: space-between;
     gap: 60px;
 }
 .hero-section div{
@@ -427,11 +405,9 @@ footer .footer-main .cc p{
 .hero-section div:last-child{
     display: flex;
     justify-content: right;
-    /* margin-right: 10px; */
 }
 
 .hero-section div:first-child{
-    gap: 50px;
     justify-content: center;
 }
 .hero-section div div h2 {
@@ -464,15 +440,11 @@ footer .footer-main .cc p{
     cursor: pointer;
 }
 .hero-section .hero-content {
-    /* border: 1px solid; */
-    padding: 30px 0;
+    margin-top: 28px;
     display: flex;
-    /* margin-top: -120px !important; */
     gap: 40px !important;
     flex-direction: column;
     align-items: start;
-    /* justify-content: start; */
-    /* padding-left: 68px; */
 }
 .hero-section .hero-content div:nth-child(2){
  
@@ -481,8 +453,7 @@ footer .footer-main .cc p{
 }
 
 .hero-section .hero-content .hero-btns{
- /* margin-top: -5px; */
- padding-top: 15px;
+    padding-top: 19px !important;
     display: flex;
 justify-content: start !important;
 flex-direction: row;
@@ -493,13 +464,6 @@ flex-direction: row;
     height: 67px !important;
     width: 180px;
 }
-/* .hero-section div div .login:hover{
-        background-color: #CED7D6;
-        color: #0A2926;
-        font-size: 22px;
-        font-weight: 600;
-        font-family: "Manrope", sans-serif;
-    } */
 .hero-section div div .register{
         background-color: #CED7D6;
         color: #0A2926;
@@ -518,17 +482,16 @@ flex-direction: row;
 } */
 
 .hero-content-img-container{
+
 }
 
 /* animation  */
 
 .hero-animation-container {
-   
     position: relative !important;
     transition: all 0.3s ease-in-out;
     width: 681px !important;
     height: 574 !important;
-    /* border: 1px solid; */
   }
   .hero-animation-container svg {
 
@@ -611,31 +574,6 @@ flex-direction: row;
     font-size: 7px;
     opacity: 1;
   }
-
-  .purple-layer {
-    position: absolute;
-    background-color: #7a4f9633;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    z-index: 1;
-    opacity: 0.5;
-    transition: transform 0.5s ease-in-out;
-  }
-
-
-
-  .blue-layer {
-    position: absolute;
-    background-color: #405987;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-        opacity: 0.3;
-    z-index: 1;
-    transition: transform 0.5s ease-in-out;
-  }
-
   .black span,
   .yellow span,
   .purple span,
@@ -646,28 +584,26 @@ flex-direction: row;
     transition: opacity 0.5s ease-in-out;
   }
 
-  .black-layer {
+  .black-layer,  .yellow-layer,  .purple-layer,  .blue-layer {
     position: absolute !important;
-    background-color: #142e36;
-    height: 40px;
-    width: 40px;
+    height: 40px !important;
+    width: 40px !important;
     border-radius: 50%;
     z-index: 1;
-    opacity: 0.3;
     transition: transform 0.5s ease-in-out;
   }
-
-  .yellow-layer {
-    position: absolute !important;
-    background-color: #d6751433;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    z-index: 1;
-    opacity: 0.79;
-    transition: transform 0.5s ease-in-out;
+  .blue-layer{
+    background-color: #4059874D;
   }
-
+  .black-layer{
+    background-color: #142E3633;
+  }
+  .yellow-layer{
+    background-color: #D6751433;
+  }
+  .purple-layer{
+    background-color: #9969DB33;
+  }
   .black:hover,
   .yellow:hover,
   .purple:hover,
@@ -692,7 +628,8 @@ flex-direction: row;
   @media screen and (min-width: 1024px){
     .hero-section div div h2 {
         font-family: Coconat;
-        font-size: 48px;
+        font-size: 4.5vw;
+        line-height: 120% !important; /* 96px */
         font-weight: 400;
         line-height: 60px;
     }
@@ -707,8 +644,7 @@ flex-direction: row;
         height: 420px !important;
       }
       .hero-section{
-        padding-top: 30px !important;
-        padding: 0 50px;
+        padding: 20px 50px 42px 50px;
         background-color: white;
         height: fit-content;
 
@@ -717,12 +653,7 @@ flex-direction: row;
     }
   }
   @media screen and (min-width: 1260px){
-    .hero-section div div h2 {
-        font-family: Coconat;
-        font-size: 46px;
-        font-weight: 400;
-        line-height: 60px;
-    }
+
     .hero-animation-container {
         position: relative;
         width: 681px !important;
@@ -751,7 +682,7 @@ flex-direction: row;
         line-height: 96px;
     }
     .hero-section{
-        padding: 0 70px;
+        padding: 20px 70px 42px 70px;
         gap: 60px;
     }
   }
@@ -760,7 +691,7 @@ flex-direction: row;
 /* ****************practitioner brand section********** */
  /* slider 1 */
  .my-swiper{
-    padding: 45px 70px 68px 70px;
+    padding: 0 70px;
      /* border: 1px solid; */
  }
  .my-swiper h3{
@@ -847,13 +778,13 @@ flex-direction: row;
 
   @media screen and (min-width: 1024px){
     .my-swiper{
-        padding: 45px 50px 68px 50px !important;
+        padding: 0px 50px 68px 50px !important;
 
      }
   }
   @media screen and (min-width: 1364px){
     .my-swiper{
-        padding: 45px 70px 68px 70px !important;
+        padding: 0px 70px 68px 70px !important;
 
      }
   }
