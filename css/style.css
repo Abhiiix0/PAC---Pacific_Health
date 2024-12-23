@@ -1,6 +1,6 @@
 @font-face {
     font-family: Coconat;
-    src: url(/fonts/Coconat-Regular.woff);
+    src: url(/assets/fonts/Coconat-Regular.woff);
   }
 *{
     padding: 0;
@@ -398,6 +398,7 @@ footer .footer-main .cc p{
         line-height: 60px;
     }
     footer .footer-main{
+      
         padding: 105px 70px 64px 70px;
     
     }
@@ -1076,6 +1077,7 @@ height: 18px !important;
   .image-slider {
     position: relative;
     height: 510px;
+    border: 1px solid;
     margin: 20px 20px;
     border-radius: 24px !important;
     overflow: hidden;
