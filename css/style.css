@@ -1076,7 +1076,7 @@ height: 18px !important;
   /* ******image slide show*********** */
   .image-slider {
     position: relative;
-    height: 510px;
+    max-height: 510px;
     margin: 20px 20px;
     border-radius: 24px !important;
     overflow: hidden;
