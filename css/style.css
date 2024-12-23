@@ -1,6 +1,6 @@
 @font-face {
     font-family: Coconat;
-    src: url(/js/Coconat-Regular.woff);
+    src: url(/fonts/Coconat-Regular.woff);
   }
 *{
     padding: 0;
@@ -55,10 +55,6 @@ header, .home-main {
     height: 32px;
     width: 300px;
 }
-.navbar svg{
-    /* height: 2px; */
-    /* width: 500px; */
-}
 .navbar .navbar-link-btn{
     display: flex;
     gap: 74px;
@@ -102,8 +98,6 @@ header, .home-main {
     cursor: pointer;
 }
 .navbar .navbar-icon-btns span{
-    /* font-size: 80px; */
-    /* background-color: #7a4f96; */
     font-weight: 400;
 }
 
@@ -793,9 +787,9 @@ flex-direction: column;
     height: 100%;
     border-radius: 0 !important;
     background: 
-    url('/images/home/leafs.jpg'); /* Your background image */
-background-size: cover; /* Ensures the image covers the entire area */
-background-position: center; /* Center the image */
+    url('/images/home/leafs.jpg');
+background-size: cover; 
+background-position: center; 
 }
 .home-features .home-features-1 .home-features-1-tagline{
     color: #0A2926;

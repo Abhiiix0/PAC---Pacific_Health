@@ -2,7 +2,7 @@ main{
     max-width: 1600px; /* Maximum width it can grow to */
     min-width: 200px; /* Minimum width it can shrink to */
     /* border: 1px solid; */
-    margin: 0 auto; /* Centers the header horizontally */
+    margin: 0 auto; 
 }
 .client-order-container{
     padding: 0 70px;
@@ -20,7 +20,7 @@ main{
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
-    line-height: 120%; /* 96px */
+    line-height: 96px; /* 96px */
 }
 .order-status-search{
     border-bottom: 2px solid #CED4D4;
@@ -62,7 +62,6 @@ main{
     border-radius: 8px;
     overflow: hidden;
     font-family: "Manrope", sans-serif;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 table {
@@ -160,7 +159,6 @@ tr{
     border-radius: 8px;
     height: 45px;
     margin: 45px;
-    /* width: 45px !important; */
   }
   @media screen and (min-width: 1024px){
     .client-order-container{
