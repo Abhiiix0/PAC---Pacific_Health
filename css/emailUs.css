@@ -13,12 +13,13 @@ display: flex;
 gap: 50px;
 }
 .email-img-container{
+
     background: url('/images/email/tree.jpg');
     background-repeat: no-repeat;
-    background-size: 150% 150%; 
+    background-size: 110% 130%; 
     border: 1px solid;
     width: 670px !important;
-    height: auto; /* Ensure height is set or dynamically adjusted */
+    height: auto;
     background-position: center;
     /* transform: scale(2); Scales the entire container */
     transform-origin: center; /* Ensure scaling happens from the center */

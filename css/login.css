@@ -1,6 +1,6 @@
 
 main{
-    max-width: 1600px !important; /* Maximum width it can grow to */
+    max-width: 1600px ; /* Maximum width it can grow to */
     min-width: 200px; /* Minimum width it can shrink to */
     /* border: 1px solid; */
     margin: 0 auto; /* Centers the header horizontally */
@@ -19,7 +19,7 @@ main{
     overflow: hidden;
     height: 803px;
     border: #d5d5d5 1px solid;
-    background-image: url('/images/Login/tree.jpg');
+    background-image: url('/assets/images/Login/tree.jpg');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@ main{
     font-weight: 500;
     line-height: 160%; /* 44.8px */
 }
-.login-section .login-form h3{
+.login-section .login-form h1{
     color: #0A2926;
     font-family: "Manrope";
     font-size: 40px;
@@ -164,7 +164,7 @@ gap: 10px;
         /* gap: 60px; */
     }
            
-    .login-section .login-form h3{
+    .login-section .login-form h1{
         font-size: 3vw;
         font-weight: 500;
         line-height: 52px;
@@ -175,7 +175,7 @@ gap: 10px;
     }
     @media screen and (min-width: 1145px){
 
-        .login-section .login-form h3{
+        .login-section .login-form h1{
             font-size: 40px;
         }
         }

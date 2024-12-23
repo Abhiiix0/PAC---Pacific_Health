@@ -12,7 +12,7 @@ main{
     gap: 115px;
 }
 .registration-container .registration-img-container{
-    background: url('/images/registration/signup.jpg');
+    background: url('/assets/images/registration/signup.jpg');
     border-radius: 24px;
     background-position: center;
     background-size: cover;
@@ -57,12 +57,12 @@ form .registration-form-section-one{
     gap: 24px;
     padding: 24px 0;
 }
-.registration-field{
+.registration-field, .field-wrapper{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.registration-field label{
+.registration-field label, .field-wrapper label{
     max-width: 458px;
     width: 100%;
     color: #546967;
@@ -74,7 +74,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
-.registration-field label span{
+.registration-field label span, .field-wrapper label span{
     margin-bottom: -6px;
     color: #546967;
     font-size: 12px !important;
@@ -83,7 +83,7 @@ align-items: center;
    text-decoration-thickness: 1px; 
     line-height: 1.5;
 }
-.registration-field input{
+.registration-field input, .field-wrapper input{
     width: 100%;
     max-width: 416px;
     height: 66px;
@@ -97,7 +97,30 @@ font-weight: 500;
 color: #546967;
 padding: 0 21px;
 }
-.registration-field input::placeholder{
+.field-wrapper select{
+    appearance: none; /* Remove the default arrow */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    width: 100%;
+    max-width: 460px;
+    height: 66px;
+    border-radius: 12px;
+    border: 2px solid #ECF2F2;
+    padding-right: 30px;
+    background: #F9F9F9 url('/assets/svgs/downarrow.svg') no-repeat right 27px center; /* Custom arrow */
+    font-size: 18px;
+font-style: normal;
+outline: none;
+font-weight: 500;
+color: #546967;
+padding: 0 21px;
+box-sizing: border-box;
+}
+.field-wrapper select option{
+font-family: var(--font-default);
+  font-size: 18px;
+}
+.registration-field input::placeholder, .field-wrapper input::placeholder{
     color: #546967;
 font-family: "Manrope";
 font-size: 18px;
