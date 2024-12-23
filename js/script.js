@@ -4,6 +4,15 @@ async function loadHTML(elementId, filePath) {
     const response = await fetch(filePath);
     const data = await response.text();
     document.getElementById(elementId).innerHTML = data;
+    // notification banner close logic
+    const closeButton = document?.getElementById(
+      "notification-banner-close-btn"
+    );
+    const notificationBanner = document?.getElementById("notification-banner");
+
+    closeButton?.addEventListener("click", function () {
+      notificationBanner.style.display = "none";
+    });
 
     // If you're loading the footer, initialize the form validation after loading
     if (elementId === "footer") {
