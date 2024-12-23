@@ -14,7 +14,7 @@ gap: 50px;
 }
 .email-img-container{
 
-    background: url('/images/email/tree.jpg');
+    background: url('/assets/images/email/tree.jpg');
     background-repeat: no-repeat;
     background-size: 110% 130%; 
     border: 1px solid;
