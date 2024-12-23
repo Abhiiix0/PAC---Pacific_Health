@@ -32,6 +32,9 @@ font-style: normal;
 font-weight: 500;
 line-height: 160%; /* 28.8px */
 }
+.return-policy-content ul{
+    margin-left: 2px;
+}
 .return-policy-content ul li{
     color: #0A2926;
 font-family: Manrope;
