@@ -801,7 +801,7 @@ flex-direction: column;
     height: 100%;
     border-radius: 0 !important;
     background: 
-    url('/assets/images/home/leafs.jpg');
+    url('/assets/images/home/leafs.webp');
 background-size: cover; 
 background-position: center; 
 }
