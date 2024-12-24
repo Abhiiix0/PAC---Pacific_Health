@@ -1,19 +1,29 @@
+main{
+    max-width: 1600px;
+  
+    width: 100%;
+    margin: 0 auto;
+    min-width: 200px; 
+}
 main h2{
-    padding: 50px 70px;
+    color: var(--primary-text-color);
+    /* Hero */
+    font-family: var(--font-heading);
     font-size: 80px;
+    font-style: normal;
+    padding: 80px 70px 44px 70px;
     font-weight: 400;
-    font-family: Coconat;
-    line-height: 28.8px;
+    line-height: 120%; /* 96px */
 }
 .table-container {
-    min-width: 1000px;
+    /* border: 1px solid ; */
+   
     padding: 0 70px;
     margin: auto;
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
     font-family: "Manrope", sans-serif;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 table {
@@ -21,42 +31,45 @@ table {
     border-collapse: collapse;
 }
 
-thead tr th{
-   
+thead tr, thead tr th{
+   border: none !important;
 }
 th {
     background-color: #F9F9F9; /* slate-200 */
-    height: 60px;
-    min-width: 150px;
+    /* height: 60px; */
+    min-width: 50px;
    max-width: 400px;
-    padding-left: 20px;
+    padding: 18px 20px 18px 20px;
     font-size: 18px;
     font-weight: 700;
     line-height: 28.8px;
     text-align: left;
-    /* border: 2px solid #ddd; */
-    font-family: "Manrope", sans-serif;
+font-family: var(--font-default);
 }
 
-td {
+tbody tr td {
     /* padding: 10px; */
-    height: 60px;
-    padding: 35px 20px;
+    padding: 34px 20px;
     vertical-align: text-top;
-    font-size: 18px;
-    font-weight: 500;
-    color: #0A2926;
+  
     border-bottom: 1px solid #ddd;
-    font-family: "Manrope", sans-serif;
+    color: var(--primary-text-color);
+    font-family: var(--font-default);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.8px; /* 28.8px */
+   
 }
 td p{
     margin: 0;
     margin-bottom: 15px;
+    color: var(--primary-text-color);
+    font-family: var(--font-default);
     font-size: 18px;
+    font-style: normal;
     font-weight: 500;
-    color: #0A2926;
-    border-bottom: 1px solid #ddd;
-    font-family: "Manrope", sans-serif;
+    line-height: 28.8px; /* 28.8px */
 }
 td:last-child{
     /* color: red; */
@@ -67,6 +80,11 @@ td p{
 td a {
     text-decoration: none;
     color: #E65909;
+    font-family: var(--font-default);
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height:  28.8px; /* 28.8px */
 }
 tr.horizontal-line {
     border-bottom: 2px solid #ddd;
@@ -77,31 +95,33 @@ tr.horizontal-line {
 
     display: flex;
     justify-content: space-between;
-    padding: 120px 0;
+    padding: 137px 0 129px 0;
 }
 .right-side-table-navigation{
     display: flex;
     gap: 10px;
 }
 .pagination #prev-btn,#next-btn {
-    padding: 5px 15px;
+    color: var(--primary-text-color);
+    font-family: var(--font-default);
     font-size: 18px;
+    font-style: normal;
     font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    font-family: "Manrope", sans-serif;
-    gap: 5px;
-    align-items: center;
-    background-color: white;
+    line-height: 160%; /* 28.8px */
     color: rgb(0, 0, 0);
-    /* border: 1px solid; */
     border: none;
-    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+
 }
 .pagination button span{
     height: 16px;
     font-size: medium;
     width: 16px;
+    
 }
 .pagination button:hover {
     /* background-color: #2b6cb0; */
@@ -114,7 +134,18 @@ tr.horizontal-line {
 
 #page-numbers span {
     margin: 0 8px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    color: #546967;
+    font-family: var(--font-default);
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 28.8px; /* 28.8px */
 }
 #page-numbers span.active {
     background-color: #CED4D4;
@@ -126,6 +157,58 @@ tr.horizontal-line {
     width: 40px;
     color: black;
   }
+  
 #page-numbers span:hover {
     /* background-color: #e7e7e7; */
+}
+@media screen and (min-width:1024px) {
+    .table-container {
+
+        padding: 0 50px;
+    }
+    main h2{
+        padding: 80px 50px 44px 50px;
+    
+    }
+    td p{
+        margin: 0;
+        margin-bottom: 15px;
+        color: var(--primary-text-color);
+        font-family: var(--font-default);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28.8px; /* 28.8px */
+    }
+    th {
+        font-size: 14px;
+    }
+    td a{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:1364px) {
+    main h2{
+        padding: 80px 70px 44px 70px;
+    }
+    .table-container {
+
+        padding: 0 70px;
+    }
+    td p{
+        margin: 0;
+        margin-bottom: 15px;
+        color: var(--primary-text-color);
+        font-family: var(--font-default);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28.8px; /* 28.8px */
+    }
+    th {
+        font-size: 18px;
+    }
+    td a{
+        font-size: 18px;
+    }
 }
