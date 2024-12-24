@@ -53,7 +53,7 @@ function renderPagination() {
 
     if (page === currentPage) {
       pageNumber.style.backgroundColor = "#CED4D4";
-      pageNumber.style.color = "#fff";
+      pageNumber.style.color = "black";
     }
 
     pageNumber.onclick = () => {

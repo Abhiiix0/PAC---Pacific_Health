@@ -10,23 +10,24 @@ main{
 height: 1306px;
 justify-content: space-between;
 display: flex;
-gap: 50px;
+gap: 60px;
 }
 .email-img-container{
-
-    background: url('/assets/images/email/tree.jpg');
-    background-repeat: no-repeat;
-    background-size: 110% 130%; 
-    border: 1px solid;
-    width: 670px !important;
+    width: 670px;
     height: auto;
-    background-position: center;
-    /* transform: scale(2); Scales the entire container */
-    transform-origin: center; /* Ensure scaling happens from the center */
+    overflow: hidden;
+    background-position: 1px center;
+}
+.email-img-container img{
+    width: 115%;
+    height: 115%;
+    object-fit: cover;
+    object-position: center -132px; /* Move the image 80px up */
 }
 .form-container{
+    width: 750px;
     /* width: 100%; */
-    border: 1px solid;
+
 }
 .form-container div{
     width: 100%;
@@ -46,8 +47,8 @@ line-height: 160%; /* 35.2px */
 background: #0A2926;
 }
 .emailus-form {
-    padding-right: 70px;
-    width: 750px;
+   max-width: 750px;
+   width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal-width columns */
     grid-gap: 26px; /* Space between grid items */
@@ -89,7 +90,9 @@ justify-content: space-between;
 border: 2px solid #ECF2F2;
 background: #F9F9F9;
     padding: 0 20px;
-
+    font-family: var(--font-default);
+    font-size: 18px;
+    color: var( --primary-text-color);
 }
 
 .emailus-message-field textarea{
@@ -100,6 +103,9 @@ background: #F9F9F9;
 border: 2px solid #ECF2F2;
 background: #F9F9F9;
     padding: 20px !important;
+    font-family: var(--font-default);
+    font-size: 18px;
+    color: var( --primary-text-color);
 
 }
 .emailus-form div:last-child {
@@ -128,12 +134,13 @@ line-height: 160%; /* 44.8px */
 }
 @media screen and (min-width:1024px) {
     .emailus-container{
-        /* padding: 0 50px; */
+        padding: 0 50px 0 0;
+        gap: 50px;
     }
 }
 @media screen and (min-width:1364px) {
     .emailus-container{
-        /* padding: 0 70px; */
-  
+        padding: 0 70px 0 0;
+  gap: 70px;
     }
 }
