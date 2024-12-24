@@ -11,23 +11,93 @@ const data = [
   },
   {
     order: 2,
-    code: "AA033B",
-    product: "* Aniseed Myrtle 5ml",
+    code: "HAI4",
+    product: "* Flower Insight Cards (69)",
     date: "2024-12-01",
-    qty: "1",
+    qty: "3",
     rrp: "$0.00",
-    w_s: "$19.38",
-    price: "$100",
+    w_s: "$53.34",
+    price: "$53.34",
   },
   {
     order: 3,
-    code: "AA033B",
-    product: "* Aniseed Myrtle 5ml",
+    code: "HCANX",
+    product: "Anxiostat 20ml",
     date: "2024-12-01",
-    qty: "1",
+    qty: "2",
     rrp: "$0.00",
-    w_s: "$19.38",
-    price: "$100",
+    w_s: "$16.00",
+    price: "$16.00",
+  },
+  {
+    order: 3,
+    code: "HCANX",
+    product: "Anxiostat 20ml",
+    date: "2024-12-01",
+    qty: "2",
+    rrp: "$0.00",
+    w_s: "$16.00",
+    price: "$16.00",
+  },
+  {
+    order: 3,
+    code: "HCANX",
+    product: "Anxiostat 20ml",
+    date: "2024-12-01",
+    qty: "2",
+    rrp: "$0.00",
+    w_s: "$16.00",
+    price: "$16.00",
+  },
+  {
+    order: 3,
+    code: "HCANX",
+    product: "Anxiostat 20ml",
+    date: "2024-12-01",
+    qty: "2",
+    rrp: "$0.00",
+    w_s: "$16.00",
+    price: "$16.00",
+  },
+  {
+    order: 3,
+    code: "HCANX",
+    product: "Anxiostat 20ml",
+    date: "2024-12-01",
+    qty: "2",
+    rrp: "$0.00",
+    w_s: "$16.00",
+    price: "$16.00",
+  },
+  {
+    order: 3,
+    code: "HCANX",
+    product: "Anxiostat 20ml",
+    date: "2024-12-01",
+    qty: "2",
+    rrp: "$0.00",
+    w_s: "$16.00",
+    price: "$16.00",
+  },
+  {
+    order: 3,
+    code: "HCANX",
+    product: "Anxiostat 20ml",
+    date: "2024-12-01",
+    qty: "2",
+    rrp: "$0.00",
+    w_s: "$16.00",
+    price: "$16.00",
+  },
+  {
+    order: 3,
+    code: "HCANX",
+    product: "Anxiostat 20ml",
+    date: "2024-12-01",
+    qty: "2",
+    rrp: "$0.00",
+    w_s: "$16.00",
+    price: "$16.00",
   },
 ];
 
@@ -56,6 +126,15 @@ function renderTable() {
   });
 
   // Add GST and Total rows after the main data rows
+
+  const subtotal = document.createElement("tr");
+  subtotal.classList.add("order-status-subtotal");
+  subtotal.innerHTML = `
+      <td colspan="5">subtotal</td>
+      <td>$300</td>
+    `;
+  tableBody.appendChild(subtotal);
+
   const gstRow = document.createElement("tr");
   gstRow.classList.add("order-status-gstrow");
 
