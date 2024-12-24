@@ -1,0 +1,109 @@
+main{
+    max-width: 1600px ; /* Maximum width it can grow to */
+    min-width: 200px; /* Minimum width it can shrink to */
+    margin: 0 auto; /* Centers the header horizontally */
+}
+html {
+    scroll-behavior: smooth;
+  }
+h1{
+    color: var(--primary-text-color);
+    /* Hero */
+    font-family: var(--font-heading);
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 96px */
+}
+.termsofuse-container{
+    display: flex;
+    gap: 65px;
+    padding: 0 70px;
+}
+.content-titles{
+      position: sticky; /* Make the element sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 10; /* Ensure it stays above other elements if necessary */
+    width: 305px;
+    min-width: 250px;
+margin-top: 200px;
+padding-top: 47px;
+margin-bottom: 20px;
+height: 355px;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+.active{
+    color: var(--primary-text-color) !important;
+}
+.content-titles b{
+    color: var(--primary-text-color);
+    font-family: var(--font-default);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25.6px; /* 25.6px */
+}
+.content-titles ul li {
+    list-style: none;
+}
+.content-titles ul li a{
+    text-decoration: none;
+    color: #CED4D4;
+    font-family: var(--font-default);
+cursor: pointer;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 160%;
+}
+.content h1{
+    color: var(--primary-text-color);
+    font-family: var(--font-heading);
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 96px */
+    margin: 83px 0 53px 0;
+}
+.c-data-container{
+    margin-top: 50px;
+}
+.c-data-container:last-child{
+    margin-bottom: 200px;
+}
+.content-title-data{
+    max-width: 967px;
+    width: 100%;
+}
+.c-title{
+    color: var(--primary-text-color);
+    font-family: var(--font-default);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 44.8px */   
+}
+.c-data{
+    color: var(--primary-text-color);
+    font-family: var(--font-default);
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+}
+@media screen and (min-width: 1024px){
+    .termsofuse-container{
+        display: flex;
+        gap: 45px;
+        padding: 0 50px;
+    }
+  }
+  @media screen and (min-width: 1364px){
+    .termsofuse-container{
+        display: flex;
+        gap: 65px;
+        padding: 0 70px;
+    }
+  }

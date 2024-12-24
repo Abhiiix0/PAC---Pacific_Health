@@ -4,11 +4,11 @@ main{
     margin: 0 auto; /* Centers the header horizontally */
 }
 main h1{
-    padding: 50px 70px 40px 70px;
+    padding: 80px 70px 49px 70px;
     font-size: 80px;
     font-weight: 400;
     font-family: var(--font-heading);
-    color: #0A2926;
+    color: var(--primary-text-color);
     font-style: normal;
     line-height: 96px; /* 96px */
 }
@@ -76,7 +76,7 @@ tr.horizontal-line {
 
     display: flex;
     justify-content: space-between;
-    padding: 120px 0;
+    padding: 154px 0 129px 0;
 }
 .right-side-table-navigation{
     display: flex;
@@ -130,7 +130,7 @@ tr.horizontal-line {
 }
 @media screen and (min-width:1024px) {
     main h1{
-        padding: 50px 50px 40px 50px;
+        padding: 60px 50px 40px 50px;
         font-size: 80px;
         font-weight: 400;
         font-family: var(--font-heading);
@@ -152,7 +152,7 @@ tr.horizontal-line {
 }
 @media screen and (min-width:1364px) {
     main h1{
-        padding: 50px 70px 40px 70px;
+        padding: 80px 70px 49px 70px;
     }
     tbody td {
         /* padding: 10px; */

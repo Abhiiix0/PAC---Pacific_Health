@@ -1,0 +1,199 @@
+#header .notification-banner{
+    margin: 20px;
+    /* background: transparent; */
+    padding: 0;
+}
+#header{
+    /* background-color: transparent !important; */
+    /* margin-top: 20px !important; */
+}
+#header .navbar{
+    background-color: transparent ;
+    /* margin-top: 20px !important; */
+}
+#header .navbar ul li a{
+    color: white !important;
+}
+#header .navbar ul li {
+    color: white !important;
+}
+#header .navbar-icon-btns img, .logo a img{
+    filter: brightness(0) saturate(100%) invert(100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+.header-container{
+    background-image: url('/assets/images/about/bgimg.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0.1px;
+
+}
+.title-container{
+    /* border: 1px solid white; */
+    padding: 0 70px;
+    max-width: 1460px ; /* Maximum width it can grow to */
+    /* width: 100%; */
+    min-width: 200px; /* Minimum width it can shrink to */
+    margin: 0 auto; /* Centers the header horizontally */
+}
+.title-container h1{
+    font-size: 80px;
+    font-weight: 400;
+    font-family: var(--font-heading);
+    color: var(--secondary-text-color);
+    font-style: normal;
+    line-height: 96px;
+    margin-top: 314px;
+    margin-bottom: 27px;
+}
+.title-container p{
+    width: 480px;
+    color: var(--secondary-text-color);
+    font-family: var(--font-default);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44.8px; /* 44.8px */
+    margin-bottom: 132px;
+}
+
+main{
+       
+        max-width: 1600px ; /* Maximum width it can grow to */
+        min-width: 200px; /* Minimum width it can shrink to */
+        margin: 0 auto; /* Centers the header horizontally */
+}
+.about-info{
+    padding: 0 70px;
+    height: 708px;
+}
+.about-info h3{
+    font-size: 12px;
+    font-weight: 500;
+    font-family: var(--font-default);
+    color: var(--primary-text-color);
+    font-style: normal;
+    line-height: 19.2px ;
+letter-spacing: 2.16px;
+margin-top: 36px;
+text-transform: uppercase;
+}
+.about-info div{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.about-info div div{
+    padding-top: 98px;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    
+}
+.about-info div h4{
+    max-width: 533px;
+    font-family: var(--font-default);
+    color: var(--primary-text-color);
+font-size: 38px;
+font-style: normal;
+font-weight: 500;
+line-height: 49.4px; /* 49.4px */
+}
+.about-info div div p:first-child{
+    margin-bottom: 50px;
+}
+.about-info div div p{
+    max-width: 608px;
+    font-family: var(--font-default);
+    color: var(--primary-text-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.8px; /* 28.8px */
+}
+
+.naturopaths-content h3{
+    text-align: center;
+    font-family: var(--font-heading);
+    color: var(--primary-text-color);
+font-size: 80px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 96px */
+}
+.naturopaths-content .nathuropaths{
+    display: flex;
+    padding: 0 70px;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 59px;
+    margin-bottom: 58px;
+
+}
+.nathuropaths .card{
+width: 473px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+.card h4{
+    margin: 31px 0 15px 0;
+    font-family: var(--font-default);
+    color: var(--primary-text-color);
+font-size: 38px;
+font-style: normal;
+font-weight: 500;
+line-height: 49.4px; /* 49.4px */
+}
+.card p{
+    font-family: var(--font-default);
+    color: var(--primary-text-color);
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height:  28.8px; /* 28.8px */
+}
+.symbol-container{
+    margin-bottom: 159px;
+    display: flex;
+    padding: 0 70px;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (min-width: 1024px){
+    .about-info,.symbol-container,.naturopaths-content .nathuropaths{
+        padding: 0 50px;
+    }
+    .title-container{
+        padding: 0 50px;
+        max-width: 1600px ; /* Maximum width it can grow to */
+    }
+    .card h4{
+       
+        font-size: 2.5vw;
+        }
+}
+@media screen and (min-width: 1364px){
+    .about-info,.symbol-container,.naturopaths-content .nathuropaths{
+        padding: 0 70px;
+    }
+
+    .title-container{
+        padding: 0 70px;
+        max-width: 1460px ; /* Maximum width it can grow to */
+    }
+    .card h4{
+       
+    font-size: 38px;
+    }
+}
